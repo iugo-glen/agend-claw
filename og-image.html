@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1200">
+  <title>OG Image — Agend Claw</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1200px;
+      height: 630px;
+      overflow: hidden;
+      font-family: 'Inter', system-ui, sans-serif;
+      background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 40%, #312e81 70%, #1e1b4b 100%);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 80px;
+      position: relative;
+    }
+
+    /* Subtle grid pattern */
+    body::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(99, 102, 241, 0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(99, 102, 241, 0.06) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+
+    /* Glow orbs */
+    .orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.3;
+    }
+    .orb-1 { width: 400px; height: 400px; background: #6366f1; top: -100px; right: 100px; }
+    .orb-2 { width: 300px; height: 300px; background: #10b981; bottom: -80px; left: 200px; opacity: 0.15; }
+    .orb-3 { width: 200px; height: 200px; background: #8b5cf6; top: 200px; right: 300px; opacity: 0.2; }
+
+    .content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 16px;
+      border-radius: 999px;
+      background: rgba(99, 102, 241, 0.2);
+      border: 1px solid rgba(99, 102, 241, 0.3);
+      font-size: 14px;
+      font-weight: 500;
+      color: #a5b4fc;
+      margin-bottom: 28px;
+    }
+    .pill-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #818cf8;
+    }
+
+    .title {
+      font-size: 72px;
+      font-weight: 800;
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      margin-bottom: 20px;
+    }
+    .title .gradient {
+      background: linear-gradient(135deg, #818cf8, #a78bfa, #34d399);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .subtitle {
+      font-size: 22px;
+      color: #94a3b8;
+      line-height: 1.5;
+      max-width: 600px;
+      margin-bottom: 48px;
+    }
+
+    .agents {
+      display: flex;
+      gap: 16px;
+    }
+    .agent {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 18px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(8px);
+    }
+    .agent-avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 14px;
+      color: white;
+    }
+    .agent-name { font-size: 14px; font-weight: 600; color: #e2e8f0; }
+    .agent-role { font-size: 11px; color: #64748b; }
+
+    .logo-row {
+      position: absolute;
+      bottom: 48px;
+      left: 80px;
+      right: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 20px;
+      font-weight: 700;
+      color: #e2e8f0;
+    }
+    .logo-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #6366f1, #7c3aed);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .url {
+      font-size: 16px;
+      color: #64748b;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <div class="content">
+    <div class="pill">
+      <span class="pill-dot"></span>
+      AI-Powered Operations
+    </div>
+
+    <h1 class="title">
+      Meet Your<br><span class="gradient">AI Operations Team</span>
+    </h1>
+
+    <p class="subtitle">
+      Six specialised agents that run your business — from sales to compliance — right inside your conversations.
+    </p>
+
+    <div class="agents">
+      <div class="agent">
+        <div class="agent-avatar" style="background: linear-gradient(135deg, #6366f1, #4f46e5)">A</div>
+        <div><div class="agent-name">Aggie</div><div class="agent-role">Orchestrator</div></div>
+      </div>
+      <div class="agent">
+        <div class="agent-avatar" style="background: linear-gradient(135deg, #10b981, #059669)">S</div>
+        <div><div class="agent-name">Scout</div><div class="agent-role">Sales</div></div>
+      </div>
+      <div class="agent">
+        <div class="agent-avatar" style="background: linear-gradient(135deg, #f59e0b, #d97706)">B</div>
+        <div><div class="agent-name">Beacon</div><div class="agent-role">Content</div></div>
+      </div>
+      <div class="agent">
+        <div class="agent-avatar" style="background: linear-gradient(135deg, #3b82f6, #2563eb)">A</div>
+        <div><div class="agent-name">Atlas</div><div class="agent-role">Platform</div></div>
+      </div>
+      <div class="agent">
+        <div class="agent-avatar" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed)">L</div>
+        <div><div class="agent-name">Lumen</div><div class="agent-role">Members</div></div>
+      </div>
+      <div class="agent">
+        <div class="agent-avatar" style="background: linear-gradient(135deg, #ef4444, #dc2626)">S</div>
+        <div><div class="agent-name">Sentinel</div><div class="agent-role">Compliance</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="logo-row">
+    <div class="logo">
+      <div class="logo-icon">
+        <svg width="20" height="20" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24"><path d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.3 24.3 0 0 1 4.5 0m0 0v5.714a2.25 2.25 0 0 0 .659 1.591L19 14.5M14.25 3.104c.251.023.501.05.75.082M19 14.5l-2.47 2.47a2.25 2.25 0 0 1-1.591.659H9.061a2.25 2.25 0 0 1-1.591-.659L5 14.5m14 0V20a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-5.5"/></svg>
+      </div>
+      Agend Claw
+    </div>
+    <div class="url">agend.dev/claw</div>
+  </div>
+</body>
+</html>
