@@ -114,24 +114,39 @@
     .scroll-smooth { scroll-behavior: smooth; }
   </style>
 </head>
-<body class="bg-white text-slate-900 scroll-smooth">
+<body class="bg-white text-slate-900 scroll-smooth" data-page="home">
 
-  <!-- Nav -->
-  <nav class="sticky top-0 z-50 border-b border-slate-200 bg-white/80 backdrop-blur-md">
-    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
-      <div class="flex items-center gap-2">
-        <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-indigo-600 to-violet-600">
-          <svg class="h-5 w-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.3 24.3 0 0 1 4.5 0m0 0v5.714a2.25 2.25 0 0 0 .659 1.591L19 14.5M14.25 3.104c.251.023.501.05.75.082M19 14.5l-2.47 2.47a2.25 2.25 0 0 1-1.591.659H9.061a2.25 2.25 0 0 1-1.591-.659L5 14.5m14 0V20a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-5.5"/></svg>
-        </div>
-        <span class="text-lg font-bold">Agend <span class="gradient-text">Claw</span></span>
+<!-- HEADER START -->
+<nav class="sticky top-0 z-50 border-b border-slate-200 bg-white/80 backdrop-blur-md">
+  <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
+    <a href="/" class="flex items-center gap-2">
+      <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-indigo-600 to-violet-600">
+        <svg class="h-5 w-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.3 24.3 0 0 1 4.5 0m0 0v5.714a2.25 2.25 0 0 0 .659 1.591L19 14.5M14.25 3.104c.251.023.501.05.75.082M19 14.5l-2.47 2.47a2.25 2.25 0 0 1-1.591.659H9.061a2.25 2.25 0 0 1-1.591-.659L5 14.5m14 0V20a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-5.5"/></svg>
       </div>
-      <div class="hidden items-center gap-6 sm:flex">
-        <a href="/ai-agents/associations" class="text-sm font-medium text-slate-600 transition hover:text-slate-900">For Associations</a>
-        <a href="/ai-agents/autonomous" class="text-sm font-medium text-slate-600 transition hover:text-slate-900">Autonomous AI</a>
-        <a href="#chat-demo" class="rounded-full bg-indigo-600 px-5 py-2 text-sm font-medium text-white transition hover:bg-indigo-700">See Demo</a>
-      </div>
+      <span class="text-lg font-bold">Agend <span class="gradient-text">Orchestrate</span></span>
+    </a>
+    <div class="hidden items-center gap-6 sm:flex">
+      <a href="/ai-agents/associations" data-nav="associations" class="nav-link">For Associations</a>
+      <a href="/ai-agents" data-nav="ai-agents" class="nav-link">AI Agents</a>
+      <a href="/ai-agents/autonomous" data-nav="autonomous" class="nav-link">Autonomous AI</a>
+      <a href="/ai-agents/shipped" data-nav="shipped" class="nav-link">Just Shipped</a>
+      <a href="/#chat-demo" data-nav="demo" class="rounded-full bg-indigo-600 px-5 py-2 text-sm font-medium text-white transition hover:bg-indigo-700">See Demo</a>
     </div>
-  </nav>
+    <button type="button" data-mobile-toggle aria-label="Toggle navigation" class="inline-flex items-center justify-center rounded-md p-2 text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 sm:hidden">
+      <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg>
+    </button>
+  </div>
+  <div data-mobile-menu class="hidden border-t border-slate-200 bg-white sm:hidden">
+    <div class="mx-auto flex max-w-6xl flex-col gap-1 px-4 py-3 sm:px-6">
+      <a href="/ai-agents/associations" data-nav="associations" class="nav-link block py-2">For Associations</a>
+      <a href="/ai-agents" data-nav="ai-agents" class="nav-link block py-2">AI Agents</a>
+      <a href="/ai-agents/autonomous" data-nav="autonomous" class="nav-link block py-2">Autonomous AI</a>
+      <a href="/ai-agents/shipped" data-nav="shipped" class="nav-link block py-2">Just Shipped</a>
+      <a href="/#chat-demo" data-nav="demo" class="mt-2 inline-flex items-center justify-center rounded-full bg-indigo-600 px-5 py-2 text-sm font-medium text-white transition hover:bg-indigo-700">See Demo</a>
+    </div>
+  </div>
+</nav>
+<!-- HEADER END -->
 
   <!-- Hero -->
   <section class="relative overflow-hidden bg-gradient-to-b from-slate-50 to-white">
@@ -472,7 +487,7 @@
       <h2 class="text-3xl font-semibold tracking-tight text-white sm:text-4xl">Ready to meet your AI team?</h2>
       <p class="mx-auto mt-4 max-w-2xl text-lg text-white/80">Get early access to Agend Orchestrate. Six specialists, one conversation, zero context-switching.</p>
       <div class="mt-8">
-        <a href="mailto:glen@agend.com.au?subject=Agend%20Claw%20Early%20Access" class="inline-flex items-center gap-2 rounded-full bg-white px-8 py-3 text-base font-medium text-slate-900 shadow-lg transition hover:bg-slate-100">
+        <a href="mailto:glen@agend.com.au?subject=Agend%20Orchestrate%20Early%20Access" class="inline-flex items-center gap-2 rounded-full bg-white px-8 py-3 text-base font-medium text-slate-900 shadow-lg transition hover:bg-slate-100">
           Request Early Access
           <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
         </a>
@@ -480,12 +495,13 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="border-t border-slate-200 bg-white py-8">
-    <div class="mx-auto max-w-6xl px-4 text-center text-sm text-slate-500 sm:px-6">
-      &copy; 2026 Agend Pty Ltd. All rights reserved.
-    </div>
-  </footer>
+<!-- FOOTER START -->
+<footer class="border-t border-slate-200 bg-white py-8">
+  <div class="mx-auto max-w-6xl px-4 text-center text-sm text-slate-500 sm:px-6">
+    &copy; 2026 Agend Pty Ltd. All rights reserved.
+  </div>
+</footer>
+<!-- FOOTER END -->
 
 <script>
 // === DATA ===

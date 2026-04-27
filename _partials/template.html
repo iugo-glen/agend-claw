@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO -->
+  <title>{{TITLE}}</title>
+  <meta name="description" content="{{DESCRIPTION}}">
+  <meta name="author" content="Agend">
+  <meta name="robots" content="index, follow">
+
+  <!-- Favicon (inline SVG data URI) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%236366f1'/%3E%3Cstop offset='100%25' stop-color='%237c3aed'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='url(%23g)'/%3E%3Cpath d='M16 7l-1.5 6.5a4 4 0 01-3 3L5 18l6.5 1.5a4 4 0 013 3L16 29l1.5-6.5a4 4 0 013-3L27 18l-6.5-1.5a4 4 0 01-3-3Z' fill='white' opacity='.9'/%3E%3C/svg%3E">
+  <meta name="theme-color" content="#4f46e5">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          animation: {
+            'fade-up': 'fadeUp 0.6s ease-out both',
+            'fade-in': 'fadeIn 0.5s ease-out both',
+          },
+          keyframes: {
+            fadeUp: {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .gradient-text {
+      background: linear-gradient(135deg, #6366f1, #8b5cf6, #10b981);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .animate-fade-up { animation: fadeUp 0.6s ease-out both; }
+    @keyframes fadeUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .nav-link { font-size: 0.875rem; line-height: 1.25rem; font-weight: 500; color: rgb(71 85 105); transition: color 150ms; }
+    .nav-link:hover { color: rgb(15 23 42); }
+    .scroll-smooth { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-white text-slate-900 scroll-smooth" data-page="{{PAGE_KEY}}">
+
+<!-- HEADER START -->
+<nav class="sticky top-0 z-50 border-b border-slate-200 bg-white/80 backdrop-blur-md">
+  <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
+    <a href="/" class="flex items-center gap-2">
+      <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-indigo-600 to-violet-600">
+        <svg class="h-5 w-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.3 24.3 0 0 1 4.5 0m0 0v5.714a2.25 2.25 0 0 0 .659 1.591L19 14.5M14.25 3.104c.251.023.501.05.75.082M19 14.5l-2.47 2.47a2.25 2.25 0 0 1-1.591.659H9.061a2.25 2.25 0 0 1-1.591-.659L5 14.5m14 0V20a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-5.5"/></svg>
+      </div>
+      <span class="text-lg font-bold">Agend <span class="gradient-text">Orchestrate</span></span>
+    </a>
+    <div class="hidden items-center gap-6 sm:flex">
+      <a href="/ai-agents/associations" data-nav="associations" class="nav-link">For Associations</a>
+      <a href="/ai-agents" data-nav="ai-agents" class="nav-link">AI Agents</a>
+      <a href="/ai-agents/autonomous" data-nav="autonomous" class="nav-link">Autonomous AI</a>
+      <a href="/ai-agents/shipped" data-nav="shipped" class="nav-link">Just Shipped</a>
+      <a href="/#chat-demo" data-nav="demo" class="rounded-full bg-indigo-600 px-5 py-2 text-sm font-medium text-white transition hover:bg-indigo-700">See Demo</a>
+    </div>
+    <button type="button" data-mobile-toggle aria-label="Toggle navigation" class="inline-flex items-center justify-center rounded-md p-2 text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 sm:hidden">
+      <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg>
+    </button>
+  </div>
+  <div data-mobile-menu class="hidden border-t border-slate-200 bg-white sm:hidden">
+    <div class="mx-auto flex max-w-6xl flex-col gap-1 px-4 py-3 sm:px-6">
+      <a href="/ai-agents/associations" data-nav="associations" class="nav-link block py-2">For Associations</a>
+      <a href="/ai-agents" data-nav="ai-agents" class="nav-link block py-2">AI Agents</a>
+      <a href="/ai-agents/autonomous" data-nav="autonomous" class="nav-link block py-2">Autonomous AI</a>
+      <a href="/ai-agents/shipped" data-nav="shipped" class="nav-link block py-2">Just Shipped</a>
+      <a href="/#chat-demo" data-nav="demo" class="mt-2 inline-flex items-center justify-center rounded-full bg-indigo-600 px-5 py-2 text-sm font-medium text-white transition hover:bg-indigo-700">See Demo</a>
+    </div>
+  </div>
+</nav>
+<!-- HEADER END -->
+
+<main>
+{{PAGE_CONTENT}}
+</main>
+
+<!-- FOOTER START -->
+<footer class="border-t border-slate-200 bg-white py-8">
+  <div class="mx-auto max-w-6xl px-4 text-center text-sm text-slate-500 sm:px-6">
+    &copy; 2026 Agend Pty Ltd. All rights reserved.
+  </div>
+</footer>
+<!-- FOOTER END -->
+
+<script>
+  (function(){
+    var key=document.body.getAttribute('data-page');
+    if(key){document.querySelectorAll('[data-nav="'+key+'"]').forEach(function(el){el.classList.add('text-indigo-600','font-semibold');});}
+    var t=document.querySelector('[data-mobile-toggle]'),m=document.querySelector('[data-mobile-menu]');
+    if(t&&m){t.addEventListener('click',function(){m.classList.toggle('hidden');});}
+  })();
+</script>
+</body>
+</html>
