@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO -->
+  <title>What Just Shipped — Six Specialist Agents + Trust Layer | Agend Claw</title>
+  <meta name="description" content="Six specialist AI agents that handle distinct membership-organisation workloads — engagement, compliance, finance, member analytics, operations — plus a trust layer that makes them safe to use on real member data.">
+  <meta name="keywords" content="AI agents, membership organisations, professional associations, CPD compliance, member engagement, trust layer, citation discipline, audit trail, multi-tenant AI">
+  <meta name="author" content="Agend">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://agend-claw.vercel.app/ai-agents/shipped">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://agend-claw.vercel.app/ai-agents/shipped">
+  <meta property="og:title" content="What Just Shipped — Six Specialist Agents + Trust Layer">
+  <meta property="og:description" content="Six specialist AI agents plus the trust layer that makes them safe to use on real member data. Built for membership organisations.">
+  <meta property="og:image" content="https://agend-claw.vercel.app/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Agend Claw">
+  <meta property="og:locale" content="en_AU">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="What Just Shipped — Six Specialist Agents + Trust Layer">
+  <meta name="twitter:description" content="Six specialist AI agents plus the trust layer that makes them safe to use on real member data.">
+  <meta name="twitter:image" content="https://agend-claw.vercel.app/og-image.png">
+
+  <!-- Favicon (inline SVG data URI — matches homepage) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%236366f1'/%3E%3Cstop offset='100%25' stop-color='%237c3aed'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='url(%23g)'/%3E%3Cpath d='M16 7l-1.5 6.5a4 4 0 01-3 3L5 18l6.5 1.5a4 4 0 013 3L16 29l1.5-6.5a4 4 0 013-3L27 18l-6.5-1.5a4 4 0 01-3-3Z' fill='white' opacity='.9'/%3E%3C/svg%3E">
+  <meta name="theme-color" content="#4f46e5">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          animation: {
+            'fade-up': 'fadeUp 0.6s ease-out both',
+            'fade-in': 'fadeIn 0.5s ease-out both',
+          },
+          keyframes: {
+            fadeUp: {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .gradient-text {
+      background: linear-gradient(135deg, #6366f1, #8b5cf6, #10b981);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .scroll-smooth { scroll-behavior: smooth; }
+
+    /* Sim: chat bubble enter */
+    .sim-bubble-enter { animation: simBubbleIn 0.45s ease-out both; }
+    @keyframes simBubbleIn {
+      0% { opacity: 0; transform: translateY(8px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Sim: typing dots */
+    .sim-typing-dot { animation: simBounce 1s infinite; }
+    .sim-typing-dot:nth-child(2) { animation-delay: 0.15s; }
+    .sim-typing-dot:nth-child(3) { animation-delay: 0.3s; }
+    @keyframes simBounce {
+      0%, 80%, 100% { transform: translateY(0); }
+      40% { transform: translateY(-5px); }
+    }
+
+    /* Sim: DAG node fade-in (staggered via inline animation-delay) */
+    .sim-dag-node { opacity: 0; animation: simDagNode 0.5s ease-out forwards; }
+    @keyframes simDagNode {
+      0% { opacity: 0; transform: translateY(6px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Sim: DAG edge draw */
+    .sim-dag-edge { stroke-dasharray: 6 6; stroke-dashoffset: 60; animation: simDagDash 0.6s ease-out forwards; }
+    @keyframes simDagDash {
+      0% { stroke-dashoffset: 60; opacity: 0; }
+      100% { stroke-dashoffset: 0; opacity: 1; }
+    }
+
+    /* Sim: approve flash */
+    .sim-approve-flash { animation: simFlash 0.7s ease-out both; }
+    @keyframes simFlash {
+      0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+      60% { box-shadow: 0 0 0 14px rgba(16, 185, 129, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+    }
+
+    /* Sim: review-and-tune button click (violet — distinct from approve green) */
+    .sim-review-pulse { animation: simReviewPulse 0.7s ease-out both; }
+    @keyframes simReviewPulse {
+      0% { box-shadow: 0 0 0 0 rgba(124, 58, 237, 0.7); }
+      60% { box-shadow: 0 0 0 14px rgba(124, 58, 237, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(124, 58, 237, 0); }
+    }
+
+    /* Sim: drawer header highlight when "Review & tune" is clicked */
+    .sim-drawer-flash { animation: simDrawerFlash 0.9s ease-out both; }
+    @keyframes simDrawerFlash {
+      0%   { box-shadow: inset 0 0 0 0 rgba(124, 58, 237, 0); }
+      40%  { box-shadow: inset 0 0 0 2px rgba(124, 58, 237, 0.55); }
+      100% { box-shadow: inset 0 0 0 0 rgba(124, 58, 237, 0); }
+    }
+
+    /* Sim: form-field fill + green-check transitions */
+    .sim-field-pop { animation: simFieldPop 0.4s ease-out both; }
+    @keyframes simFieldPop {
+      0%   { opacity: 0.55; transform: translateY(2px); }
+      100% { opacity: 1;    transform: translateY(0); }
+    }
+    .sim-check-pop { animation: simCheckPop 0.4s cubic-bezier(.34,1.56,.64,1) both; }
+    @keyframes simCheckPop {
+      0%   { opacity: 0; transform: scale(0.4); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+    /* Sim: soft-gate accordion smooth height transition */
+    .sim-accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.7s ease-in-out, opacity 0.3s ease-in-out;
+      opacity: 0;
+    }
+    .sim-accordion-content.is-open {
+      max-height: 2400px;
+      opacity: 1;
+    }
+
+    /* Sim: drawer mount — fades/slides the drawer shell in on review-click */
+    .sim-drawer-mount { animation: simDrawerMount 0.55s ease-out both; }
+    @keyframes simDrawerMount {
+      0%   { opacity: 0; transform: translateY(8px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Reduced motion: stop everything, show final state */
+    @media (prefers-reduced-motion: reduce) {
+      .sim-bubble-enter,
+      .sim-typing-dot,
+      .sim-dag-node,
+      .sim-dag-edge,
+      .sim-approve-flash,
+      .sim-review-pulse,
+      .sim-drawer-flash,
+      .sim-drawer-mount,
+      .sim-field-pop,
+      .sim-check-pop {
+        animation: none !important;
+      }
+      .sim-dag-node { opacity: 1; }
+      .sim-dag-edge { stroke-dashoffset: 0; opacity: 1; }
+      .sim-accordion-content { transition: none !important; }
+    }
+  </style>
+</head>
+<body class="bg-white text-slate-900 scroll-smooth">
+
+  <!-- Nav -->
+  <nav class="sticky top-0 z-50 border-b border-slate-200 bg-white/80 backdrop-blur-md">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
+      <a href="/" class="flex items-center gap-2">
+        <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-indigo-600 to-violet-600">
+          <svg class="h-5 w-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.3 24.3 0 0 1 4.5 0m0 0v5.714a2.25 2.25 0 0 0 .659 1.591L19 14.5M14.25 3.104c.251.023.501.05.75.082M19 14.5l-2.47 2.47a2.25 2.25 0 0 1-1.591.659H9.061a2.25 2.25 0 0 1-1.591-.659L5 14.5m14 0V20a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-5.5"/></svg>
+        </div>
+        <span class="text-lg font-bold">Agend <span class="gradient-text">Claw</span></span>
+      </a>
+      <div class="hidden items-center gap-6 sm:flex">
+        <a href="/ai-agents/associations" class="text-sm font-medium text-slate-600 transition hover:text-slate-900">For Associations</a>
+        <a href="/ai-agents/autonomous" class="text-sm font-medium text-slate-600 transition hover:text-slate-900">Autonomous AI</a>
+        <a href="/" class="rounded-full bg-indigo-600 px-5 py-2 text-sm font-medium text-white transition hover:bg-indigo-700">Back to home</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Back link -->
+  <div class="border-b border-slate-100 bg-slate-50/60">
+    <div class="mx-auto max-w-6xl px-4 py-3 sm:px-6">
+      <a href="/" class="inline-flex items-center gap-1.5 text-sm text-slate-500 transition hover:text-slate-900">
+        <svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+        Back to home
+      </a>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden bg-gradient-to-b from-slate-50 to-white">
+    <div class="mx-auto max-w-4xl px-4 py-20 text-center sm:px-6 lg:py-28">
+      <div class="animate-fade-up">
+        <span class="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-4 py-1.5 text-sm font-medium text-emerald-700">
+          <span class="h-2 w-2 rounded-full bg-emerald-500"></span>
+          Just shipped
+        </span>
+      </div>
+      <h1 class="mt-8 text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl" style="animation: fadeUp 0.6s ease-out 0.1s both">
+        Six specialist agents.<br>
+        <span class="gradient-text">A trust layer worth bringing to work.</span>
+      </h1>
+      <p class="mx-auto mt-6 max-w-2xl text-lg text-slate-600 sm:text-xl" style="animation: fadeUp 0.6s ease-out 0.2s both">
+        We just landed six specialist AI agents that handle distinct membership-organisation workloads &mdash; engagement, compliance, finance, member analytics, operations &mdash; plus the trust layer that makes them safe to use on real member data.
+      </p>
+      <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row" style="animation: fadeUp 0.6s ease-out 0.3s both">
+        <a href="#specialists" class="inline-flex items-center gap-2 rounded-full bg-indigo-600 px-8 py-3 text-base font-medium text-white shadow-lg transition hover:bg-indigo-700 hover:shadow-xl">
+          Meet the specialists
+          <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+        </a>
+        <a href="#trust" class="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-8 py-3 text-base font-medium text-slate-700 transition hover:border-slate-400 hover:bg-slate-50">
+          What &ldquo;trust layer&rdquo; means
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Six Specialists -->
+  <section id="specialists" class="bg-white py-16 lg:py-24">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h2 class="text-3xl font-semibold tracking-tight sm:text-4xl">The six specialists</h2>
+        <p class="mx-auto mt-4 max-w-2xl text-lg text-slate-600">Each agent has a deliberately narrow remit. They don&rsquo;t pretend to be generalists &mdash; they hand off to each other when a question crosses domains.</p>
+      </div>
+
+      <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+        <!-- Aggie / Orchestrator -->
+        <article class="group relative rounded-xl border border-slate-200 bg-white p-6 transition-all hover:shadow-lg">
+          <div class="absolute inset-x-0 top-0 h-0.5 rounded-t-xl bg-sky-500"></div>
+          <div class="flex items-start gap-4">
+            <div class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-sky-50">
+              <svg class="h-6 w-6 text-sky-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z"/></svg>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold">Aggie</h3>
+              <p class="text-sm font-medium text-sky-700">Chief-of-staff orchestrator</p>
+            </div>
+          </div>
+          <p class="mt-4 text-sm text-slate-600"><span class="font-medium text-slate-900">Routes the question.</span> When you ask something cross-domain, Aggie picks the right specialist (or two) and presents one coherent answer instead of five fragments.</p>
+          <p class="mt-3 text-sm text-slate-500"><span class="font-medium text-slate-700">What sets it apart:</span> holds no data tools of its own. Every fact in Aggie&rsquo;s reply originates from a specialist it delegated to &mdash; the audit trail stays clean.</p>
+        </article>
+
+        <!-- Lumen / Membership Analyst -->
+        <article class="group relative rounded-xl border border-slate-200 bg-white p-6 transition-all hover:shadow-lg">
+          <div class="absolute inset-x-0 top-0 h-0.5 rounded-t-xl bg-violet-500"></div>
+          <div class="flex items-start gap-4">
+            <div class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-violet-50">
+              <svg class="h-6 w-6 text-violet-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/></svg>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold">Lumen</h3>
+              <p class="text-sm font-medium text-violet-700">Membership analyst</p>
+            </div>
+          </div>
+          <p class="mt-4 text-sm text-slate-600"><span class="font-medium text-slate-900">Sees the lifecycle, not the row.</span> Lumen reasons across joins, renewals, lapses, and engagement signals to surface who is at risk and what shape that risk has.</p>
+          <p class="mt-3 text-sm text-slate-500"><span class="font-medium text-slate-700">What sets it apart:</span> won&rsquo;t extrapolate from a single data point. If sample size is too small, Lumen says so &mdash; "treat the patterns below as directional" &mdash; rather than rounding the unknown bucket away.</p>
+        </article>
+
+        <!-- Scout / Revenue Strategist -->
+        <article class="group relative rounded-xl border border-slate-200 bg-white p-6 transition-all hover:shadow-lg">
+          <div class="absolute inset-x-0 top-0 h-0.5 rounded-t-xl bg-emerald-500"></div>
+          <div class="flex items-start gap-4">
+            <div class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-emerald-50">
+              <svg class="h-6 w-6 text-emerald-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z"/></svg>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold">Scout</h3>
+              <p class="text-sm font-medium text-emerald-700">Revenue strategist</p>
+            </div>
+          </div>
+          <p class="mt-4 text-sm text-slate-600"><span class="font-medium text-slate-900">Pricing, sponsorships, and non-dues revenue.</span> Scout cross-references CRM orders, sponsorship records, and event financials &mdash; and points at tiers worth investigating.</p>
+          <p class="mt-3 text-sm text-slate-500"><span class="font-medium text-slate-700">What sets it apart:</span> board-ready clarity, but never prescriptive. Scout highlights underperformance; the pricing decision still belongs to your finance team.</p>
+        </article>
+
+        <!-- Beacon / Engagement Coach -->
+        <article class="group relative rounded-xl border border-slate-200 bg-white p-6 transition-all hover:shadow-lg">
+          <div class="absolute inset-x-0 top-0 h-0.5 rounded-t-xl bg-amber-500"></div>
+          <div class="flex items-start gap-4">
+            <div class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-amber-50">
+              <svg class="h-6 w-6 text-amber-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.13-1.897L16.863 4.487Zm0 0L19.5 7.125"/></svg>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold">Beacon</h3>
+              <p class="text-sm font-medium text-amber-700">Engagement coach</p>
+            </div>
+          </div>
+          <p class="mt-4 text-sm text-slate-600"><span class="font-medium text-slate-900">Reads the community like a room.</span> Beacon spots which courses, channels, and threads are pulling above their weight &mdash; and where the energy is quietly slipping.</p>
+          <p class="mt-3 text-sm text-slate-500"><span class="font-medium text-slate-700">What sets it apart:</span> pattern-spotter, not scorekeeper. A 200-view post with 30 comments tells a different story from 2,000 views and three reactions, and Beacon will say so.</p>
+        </article>
+
+        <!-- Atlas / Operations Manager -->
+        <article class="group relative rounded-xl border border-slate-200 bg-white p-6 transition-all hover:shadow-lg">
+          <div class="absolute inset-x-0 top-0 h-0.5 rounded-t-xl bg-indigo-500"></div>
+          <div class="flex items-start gap-4">
+            <div class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-indigo-50">
+              <svg class="h-6 w-6 text-indigo-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"/></svg>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold">Atlas</h3>
+              <p class="text-sm font-medium text-indigo-700">Operations manager</p>
+            </div>
+          </div>
+          <p class="mt-4 text-sm text-slate-600"><span class="font-medium text-slate-900">The day-to-day operational picture.</span> Atlas tracks support patterns, admin activity, and system signals &mdash; spotting the drifting before it&rsquo;s the breaking.</p>
+          <p class="mt-3 text-sm text-slate-500"><span class="font-medium text-slate-700">What sets it apart:</span> calm escalation over alarm. A Saturday-night spike of admin edits gets a low/medium/high severity hint &mdash; and the numbers underneath, so you can challenge the call.</p>
+        </article>
+
+        <!-- Sentinel / Compliance -->
+        <article class="group relative rounded-xl border border-slate-200 bg-white p-6 transition-all hover:shadow-lg">
+          <div class="absolute inset-x-0 top-0 h-0.5 rounded-t-xl bg-red-500"></div>
+          <div class="flex items-start gap-4">
+            <div class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-red-50">
+              <svg class="h-6 w-6 text-red-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"/></svg>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold">Sentinel</h3>
+              <p class="text-sm font-medium text-red-700">Compliance specialist</p>
+            </div>
+          </div>
+          <p class="mt-4 text-sm text-slate-600"><span class="font-medium text-slate-900">CPD, Code of Conduct, and audit posture.</span> Sentinel handles the questions that carry consequences for your members and your regulator &mdash; with the highest evidentiary bar of any agent.</p>
+          <p class="mt-3 text-sm text-slate-500"><span class="font-medium text-slate-700">What sets it apart:</span> citation-or-refuse. Every compliance claim links to the source row that backs it. If a row can&rsquo;t be cited, Sentinel won&rsquo;t make the claim &mdash; it refuses cleanly instead of guessing.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- See it in motion (Simulation) -->
+  <section id="in-motion" class="bg-gradient-to-b from-white via-slate-50/60 to-white py-16 lg:py-24">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <span class="inline-flex items-center gap-2 rounded-full border border-amber-200 bg-amber-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-amber-700">See it in motion</span>
+        <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">How the loop runs</h2>
+        <p class="mx-auto mt-4 max-w-2xl text-lg text-slate-600">An operator chats with Beacon. Beacon describes a pattern, proposes a bounded action, the workflow renders, the operator approves &mdash; the action runs.</p>
+      </div>
+
+      <div class="mt-10 grid gap-6 lg:grid-cols-5">
+
+        <!-- Chat panel (3 cols) -->
+        <div class="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-xl lg:col-span-3">
+          <div class="flex items-center justify-between border-b border-slate-200 bg-slate-50 px-4 py-3">
+            <div class="flex items-center gap-2">
+              <span class="text-slate-400">#</span>
+              <span class="text-sm font-semibold">ops-room</span>
+              <span class="hidden text-xs text-slate-400 sm:inline">&middot; Operator + Beacon</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <button id="sim-pause-btn" type="button" aria-pressed="false" class="inline-flex items-center gap-1.5 rounded-md border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-600 transition hover:border-slate-300 hover:bg-slate-50">
+                <svg id="sim-pause-icon" class="h-3.5 w-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M15.75 5.25v13.5m-7.5-13.5v13.5"/></svg>
+                <svg id="sim-play-icon" class="hidden h-3.5 w-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 0 1 0 1.971l-11.54 6.347a1.125 1.125 0 0 1-1.667-.985V5.653Z"/></svg>
+                <span id="sim-pause-label">Pause</span>
+              </button>
+              <button id="sim-replay-btn" type="button" class="inline-flex items-center gap-1.5 rounded-md border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-600 transition hover:border-slate-300 hover:bg-slate-50">
+                <svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182"/></svg>
+                <span>Replay</span>
+              </button>
+            </div>
+          </div>
+          <div id="sim-messages" class="flex h-[480px] flex-col gap-3 overflow-y-auto bg-white px-4 py-4" aria-live="polite" aria-label="Beacon and operator conversation"></div>
+        </div>
+
+        <!-- Drawer panel (2 cols) — visually IS the InterventionDrawer.
+             Initial state: placeholder visible, drawer shell hidden until review-click. -->
+        <div class="lg:col-span-2">
+
+          <!-- Placeholder shown before Beacon drafts — calm, neutral, muted. -->
+          <div id="sim-drawer-placeholder" class="flex h-[600px] flex-col items-center justify-center rounded-xl border border-dashed border-slate-200 bg-slate-50/40 px-6 py-8 text-center" aria-label="Drawer placeholder">
+            <div class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white text-slate-400 ring-1 ring-slate-200">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z"/></svg>
+            </div>
+            <p class="mt-4 max-w-[16rem] text-[13px] leading-relaxed text-slate-500">
+              Beacon hasn&rsquo;t drafted anything yet. Ask Beacon to spot a pattern, then <span class="font-medium text-slate-700">Review &amp; tune</span> opens the drawer here.
+            </p>
+          </div>
+
+          <!-- Drawer shell — hidden until review-click; visibility flipped via .hidden. -->
+          <div id="sim-drawer" class="hidden h-[600px] flex-col overflow-hidden rounded-xl border border-slate-200 bg-white shadow-xl" aria-label="Intervention drawer preview">
+          <!-- Sticky header (mirrors SheetHeader) -->
+          <div id="sim-drawer-header" class="sticky top-0 z-10 flex items-center gap-2 border-b border-slate-200 bg-white px-4 py-3">
+            <svg class="h-4 w-4 text-amber-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z"/></svg>
+            <span class="text-sm font-semibold">Beacon proposed this</span>
+            <span id="sim-drawer-status" class="rounded-full bg-violet-100 px-2 py-0.5 text-[10px] font-medium text-violet-700">Draft</span>
+            <button type="button" class="ml-auto rounded p-1 text-slate-400 hover:bg-slate-100 hover:text-slate-600" aria-label="Close drawer">
+              <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6l12 12"/></svg>
+            </button>
+          </div>
+
+          <!-- Scrollable body (mirrors ScrollArea) -->
+          <div id="sim-drawer-body" class="flex-1 overflow-y-auto bg-slate-50/30 px-4 py-4 text-sm">
+
+            <!-- Section 1 — Your independent draft (~3 min, 4 fields) -->
+            <section id="sim-baseline-section" class="mb-5 rounded-lg border border-slate-200 bg-white p-3">
+              <div class="mb-2 flex items-center justify-between">
+                <div>
+                  <h3 class="text-[13px] font-semibold text-slate-900">1. Your independent draft</h3>
+                  <p class="text-[11px] text-slate-500">~3 min &middot; locks the agent's proposal until submitted</p>
+                </div>
+                <span id="sim-baseline-status" class="hidden rounded-full bg-emerald-50 px-2 py-0.5 text-[10px] font-medium text-emerald-700">Soft-gate cleared</span>
+              </div>
+              <div id="sim-baseline-fields" class="space-y-2.5"></div>
+              <div class="mt-3 flex justify-end">
+                <button id="sim-baseline-submit" type="button" class="inline-flex items-center gap-1.5 rounded-md bg-violet-600 px-2.5 py-1.5 text-[11px] font-semibold text-white transition hover:bg-violet-700" disabled>
+                  <span id="sim-baseline-submit-label">Save baseline draft</span>
+                </button>
+              </div>
+            </section>
+
+            <!-- Section 2 — Reveal agent's proposal (soft-gate accordion) -->
+            <section id="sim-proposal-section" class="rounded-lg border border-slate-200 bg-white">
+              <button id="sim-proposal-trigger" type="button" disabled class="flex w-full items-center justify-between px-3 py-2.5 text-left text-[13px] font-semibold text-slate-500" aria-expanded="false">
+                <span id="sim-proposal-trigger-label" class="flex items-center gap-2">
+                  <svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"/></svg>
+                  Locked &mdash; submit your baseline above first
+                </span>
+                <svg id="sim-proposal-chevron" class="h-3.5 w-3.5 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
+              </button>
+              <div id="sim-proposal-content" class="sim-accordion-content border-t border-slate-100">
+                <div class="space-y-4 px-3 py-3">
+
+                  <!-- Resolved cohort summary -->
+                  <div>
+                    <p class="text-[12px] font-medium text-slate-900">React Fundamentals</p>
+                    <p class="text-[11px] text-slate-500">12 members would be reached on Loop DM</p>
+                    <p class="mt-0.5 truncate text-[11px] italic text-slate-500">&ldquo;Hi {{first_name}}, just checking in on lesson 3 &mdash; let me know if you're stuck&hellip;&rdquo;</p>
+                  </div>
+
+                  <!-- DAG (the existing renderDag target) -->
+                  <div>
+                    <h4 class="mb-1.5 text-[11px] font-semibold uppercase tracking-wide text-slate-500">Workflow plan</h4>
+                    <div id="sim-dag" class="relative" role="img" aria-label="Workflow plan: Fetch cohort, then check cohort size, then send Loop DM, then end"></div>
+                  </div>
+
+                  <!-- Per-target consent table -->
+                  <div>
+                    <div class="mb-1.5 flex items-center justify-between">
+                      <h4 class="text-[11px] font-semibold uppercase tracking-wide text-slate-500">Members (12)</h4>
+                      <span class="text-[10px] text-slate-500">Loop DM channel</span>
+                    </div>
+                    <div class="rounded-md border border-slate-200">
+                      <div class="flex items-center gap-2 border-b border-slate-100 bg-slate-50/60 px-2 py-1.5 text-[10px] text-slate-600">
+                        <input type="checkbox" class="h-3 w-3" aria-label="Select all" />
+                        <span>Bulk override (0 selected)</span>
+                        <select class="ml-auto rounded border border-slate-200 bg-white px-1.5 py-0.5 text-[10px] text-slate-500" disabled>
+                          <option>Choose override reason&hellip;</option>
+                        </select>
+                      </div>
+                      <ul class="divide-y divide-slate-100 text-[11px]">
+                        <li class="flex items-center gap-2 px-2 py-1.5">
+                          <input type="checkbox" class="h-3 w-3" checked aria-label="Approve target" />
+                          <span class="font-medium text-slate-800">Sarah K.</span>
+                          <span class="text-slate-400">sarah.k@&hellip;</span>
+                          <span class="ml-auto rounded-full bg-emerald-50 px-1.5 py-0.5 text-[9px] font-medium text-emerald-700">Consented</span>
+                        </li>
+                        <li class="flex items-center gap-2 px-2 py-1.5">
+                          <input type="checkbox" class="h-3 w-3" checked aria-label="Approve target" />
+                          <span class="font-medium text-slate-800">Marcus T.</span>
+                          <span class="text-slate-400">marcus.t@&hellip;</span>
+                          <span class="ml-auto rounded-full bg-emerald-50 px-1.5 py-0.5 text-[9px] font-medium text-emerald-700">Consented</span>
+                        </li>
+                        <li class="flex items-center gap-2 px-2 py-1.5">
+                          <input type="checkbox" class="h-3 w-3" aria-label="Approve target" />
+                          <span class="font-medium text-slate-800">Priya R.</span>
+                          <span class="text-slate-400">priya.r@&hellip;</span>
+                          <span class="ml-auto rounded-full bg-amber-50 px-1.5 py-0.5 text-[9px] font-medium text-amber-700">Missing</span>
+                        </li>
+                      </ul>
+                      <div class="border-t border-slate-100 px-2 py-1.5 text-center text-[10px] font-medium text-violet-700">+ 9 more</div>
+                    </div>
+                  </div>
+
+                  <!-- Dry-run preview -->
+                  <div class="rounded-md border border-slate-200 bg-slate-50/60 p-2.5">
+                    <div class="flex items-center justify-between text-[12px] font-semibold text-slate-800">
+                      <span>Would send to 12 members</span>
+                      <svg class="h-3 w-3 text-slate-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="m4.5 15.75 7.5-7.5 7.5 7.5"/></svg>
+                    </div>
+                    <p class="mt-1 text-[11px] text-slate-500">Estimated delivery &lt;2 min &middot; first recipient: Sarah K.</p>
+                  </div>
+
+                </div>
+              </div>
+            </section>
+
+          </div>
+
+          <!-- Sticky action row -->
+          <div class="sticky bottom-0 z-10 flex items-center justify-between border-t border-slate-200 bg-white px-4 py-3">
+            <button type="button" class="inline-flex items-center gap-1.5 rounded-md border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-600 transition hover:bg-slate-50">
+              <svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6l12 12"/></svg>
+              Reject
+            </button>
+            <button id="sim-approve-btn" type="button" disabled title="Review the dry-run preview to approve" class="inline-flex cursor-not-allowed items-center gap-1.5 rounded-md bg-emerald-200 px-3 py-1.5 text-xs font-semibold text-emerald-700/60 opacity-60 transition">
+              <svg id="sim-approve-icon" class="h-3.5 w-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.75 10.5 18.75 19.5 5.25"/></svg>
+              <span id="sim-approve-label">Approve</span>
+            </button>
+          </div>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="mx-auto mt-6 max-w-3xl text-center text-sm italic text-slate-500">What you&rsquo;re watching: the loop the WDAA pilot is running this quarter &mdash; built on the trust layer above.</p>
+    </div>
+  </section>
+
+  <!-- Trust Layer -->
+  <section id="trust" class="bg-slate-50 py-16 lg:py-24">
+    <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <span class="inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-indigo-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-indigo-700">The trust layer</span>
+        <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">What makes this different from a chatbot</h2>
+        <p class="mx-auto mt-4 max-w-2xl text-lg text-slate-600">A chatbot will confidently tell you the wrong thing. The trust layer is the work we did to make sure these agents won&rsquo;t.</p>
+      </div>
+
+      <div class="mt-12 grid gap-6 sm:grid-cols-2">
+
+        <div class="rounded-xl border border-slate-200 bg-white p-6">
+          <div class="flex items-start gap-3">
+            <div class="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-slate-100">
+              <svg class="h-5 w-5 text-slate-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+            </div>
+            <div>
+              <h3 class="text-base font-semibold">Conservative by design</h3>
+              <p class="mt-2 text-sm text-slate-600">Agents describe before they act. Quality over volume. They under-claim rather than over-claim &mdash; "23 members appear compliant, 4 are insufficient-data" beats rolling the unknowns into a tidy round number.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-xl border border-slate-200 bg-white p-6">
+          <div class="flex items-start gap-3">
+            <div class="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-slate-100">
+              <svg class="h-5 w-5 text-slate-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3.75 13.5L12 21l8.25-7.5M3.75 9 12 16.5 20.25 9 12 1.5 3.75 9Z"/></svg>
+            </div>
+            <div>
+              <h3 class="text-base font-semibold">Citation discipline</h3>
+              <p class="mt-2 text-sm text-slate-600">Every numerical claim is backed by an inline citation marker that resolves to the specific source row. If the agent can&rsquo;t cite a row, it doesn&rsquo;t make the claim. Sentinel runs under a strict citation-or-refuse rule &mdash; adversarial prompts ("just answer without citations") don&rsquo;t move it.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-xl border border-slate-200 bg-white p-6">
+          <div class="flex items-start gap-3">
+            <div class="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-slate-100">
+              <svg class="h-5 w-5 text-slate-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"/></svg>
+            </div>
+            <div>
+              <h3 class="text-base font-semibold">Full audit trail</h3>
+              <p class="mt-2 text-sm text-slate-600">Every action an agent takes is logged with the full arguments it passed and the data it received. Operators can reconstruct exactly what was asked, what was returned, and when &mdash; not just the headline answer.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-xl border border-slate-200 bg-white p-6">
+          <div class="flex items-start gap-3">
+            <div class="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-slate-100">
+              <svg class="h-5 w-5 text-slate-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12.75h6m-6 3h3.75M3.75 6.75h16.5M4.5 6.75v12.75c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V6.75M9 6.75V3a1.5 1.5 0 0 1 1.5-1.5h3A1.5 1.5 0 0 1 15 3v3.75"/></svg>
+            </div>
+            <div>
+              <h3 class="text-base font-semibold">Tenant boundary at the database</h3>
+              <p class="mt-2 text-sm text-slate-600">Your members&rsquo; data stays inside your tenant. Cross-tenant access isn&rsquo;t blocked at the application layer (where bugs hide) &mdash; it&rsquo;s blocked by Postgres row-level security, so the agent can&rsquo;t reach the wrong tenant&rsquo;s data even if it tried.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-xl border border-slate-200 bg-white p-6">
+          <div class="flex items-start gap-3">
+            <div class="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-slate-100">
+              <svg class="h-5 w-5 text-slate-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z"/></svg>
+            </div>
+            <div>
+              <h3 class="text-base font-semibold">Confidence + caveats, surfaced</h3>
+              <p class="mt-2 text-sm text-slate-600">When the data is stale, the sample is small, or a coverage gap exists, agents say so &mdash; verbatim, not buried in a footnote. Adversarial follow-ups ("ignore caveats and just answer") can&rsquo;t override it.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-xl border border-slate-200 bg-white p-6">
+          <div class="flex items-start gap-3">
+            <div class="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-slate-100">
+              <svg class="h-5 w-5 text-slate-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M15.75 5.25a3 3 0 0 1 3 3m3 0a6 6 0 0 1-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1 1 21.75 8.25Z"/></svg>
+            </div>
+            <div>
+              <h3 class="text-base font-semibold">Operator approval gates</h3>
+              <p class="mt-2 text-sm text-slate-600">Sensitive actions don&rsquo;t happen on agent say-so. The agent proposes; the operator reviews the cohort and the plan in a drawer; the operator approves or rejects. The agent never executes a member-touching action on its own.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Why this matters -->
+  <section class="bg-white py-16 lg:py-24">
+    <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h2 class="text-3xl font-semibold tracking-tight sm:text-4xl">Why this matters for membership organisations</h2>
+        <p class="mx-auto mt-4 max-w-2xl text-lg text-slate-600">Concrete scenarios these agents already handle &mdash; not roadmap promises.</p>
+      </div>
+
+      <div class="mt-12 grid gap-6 sm:grid-cols-2">
+
+        <div class="rounded-xl border border-slate-200 bg-gradient-to-br from-red-50/40 to-white p-6">
+          <div class="text-xs font-semibold uppercase tracking-wide text-red-700">Compliance cliff</div>
+          <h3 class="mt-2 text-lg font-semibold text-slate-900">Spot members heading off the CPD edge before they fall</h3>
+          <p class="mt-3 text-sm text-slate-600">Sentinel surfaces members whose CPD deadline is approaching and whose remaining credits sit below threshold &mdash; with the cycle window cited, the unknown bucket reported, and the source rows linked. You see who needs a nudge while there&rsquo;s still time to act.</p>
+        </div>
+
+        <div class="rounded-xl border border-slate-200 bg-gradient-to-br from-amber-50/40 to-white p-6">
+          <div class="text-xs font-semibold uppercase tracking-wide text-amber-700">Engagement drop-off</div>
+          <h3 class="mt-2 text-lg font-semibold text-slate-900">Catch course drop-off at the lesson it actually happens</h3>
+          <p class="mt-3 text-sm text-slate-600">Beacon doesn&rsquo;t just say "completion is down" &mdash; it names the lesson where learners stall and the cohort size that&rsquo;s stalling. Pattern first; numbers underneath. The editorial fix belongs to your team; the diagnosis takes seconds.</p>
+        </div>
+
+        <div class="rounded-xl border border-slate-200 bg-gradient-to-br from-violet-50/40 to-white p-6">
+          <div class="text-xs font-semibold uppercase tracking-wide text-violet-700">Renewal risk</div>
+          <h3 class="mt-2 text-lg font-semibold text-slate-900">Surface renewal risk without a spammy mass email</h3>
+          <p class="mt-3 text-sm text-slate-600">Lumen identifies the specific members at risk in the next 90 days, with the engagement signal for each. You get the named list and the per-member evidence &mdash; targeted outreach, not a blanket "we miss you" campaign that erodes the rest of your list.</p>
+        </div>
+
+        <div class="rounded-xl border border-slate-200 bg-gradient-to-br from-indigo-50/40 to-white p-6">
+          <div class="text-xs font-semibold uppercase tracking-wide text-indigo-700">Audit-ready</div>
+          <h3 class="mt-2 text-lg font-semibold text-slate-900">Generate compliance summaries you can put in front of a board</h3>
+          <p class="mt-3 text-sm text-slate-600">Sentinel reports CPD posture in four buckets &mdash; compliant, at-risk, non-compliant, unknown &mdash; with the cycle definition, sample size, and coverage gaps named explicitly. No binary "85% compliant" claims that fall apart under questioning.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- What this opens up -->
+  <section class="bg-slate-50 py-16 lg:py-24">
+    <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <span class="inline-flex items-center gap-2 rounded-full border border-violet-200 bg-violet-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-violet-700">What this opens up</span>
+        <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">From describing patterns to proposing actions</h2>
+      </div>
+
+      <div class="mt-10 rounded-2xl border border-violet-200 bg-gradient-to-br from-white via-violet-50/40 to-white p-8 sm:p-10">
+        <p class="text-lg leading-relaxed text-slate-700">
+          Today the agents describe what&rsquo;s happening. The next phase &mdash; already in flight &mdash; lets them <span class="font-semibold text-slate-900">propose a bounded action plan</span> that the operator approves before anything runs.
+        </p>
+        <p class="mt-4 text-base leading-relaxed text-slate-600">
+          Beacon notices a course drop-off and proposes a re-engagement nudge to the stalled cohort. Sentinel notices a CPD deadline cliff and proposes a compliance reminder to members below threshold. The operator sees the cohort, the message, and the plan in a drawer over the chat &mdash; and approves, tunes, or rejects with a click.
+        </p>
+        <p class="mt-4 text-base leading-relaxed text-slate-600">
+          The agents don&rsquo;t execute. They never supply the recipient list or the tenant ID. The plan is compiled by the platform and gated by the operator&rsquo;s approval. That&rsquo;s the bridge from "useful analyst" to "member-touching action" &mdash; built so it can&rsquo;t skip the human step.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="relative overflow-hidden bg-gradient-to-br from-indigo-600 via-violet-600 to-emerald-500 py-16 lg:py-24">
+    <div class="relative mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-semibold tracking-tight text-white sm:text-4xl">Want to see them on your data?</h2>
+      <p class="mx-auto mt-4 max-w-2xl text-lg text-white/80">Six specialists, one trust layer, your tenant. Get early access to the agents on Agend Claw.</p>
+      <div class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+        <a href="mailto:glen@agend.com.au?subject=Agend%20Claw%20Early%20Access%20%E2%80%94%20Specialist%20Agents" class="inline-flex items-center gap-2 rounded-full bg-white px-8 py-3 text-base font-medium text-slate-900 shadow-lg transition hover:bg-slate-100">
+          Request early access
+          <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+        </a>
+        <a href="/" class="inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/10 px-8 py-3 text-base font-medium text-white backdrop-blur-sm transition hover:bg-white/20">
+          Back to the platform tour
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200 bg-white py-8">
+    <div class="mx-auto max-w-6xl px-4 text-center text-sm text-slate-500 sm:px-6">
+      &copy; 2026 Agend Pty Ltd. All rights reserved.
+    </div>
+  </footer>
+
+<script>
+// === Shipped-page simulation: agent-authored intervention loop ===
+(function() {
+  const messagesEl = document.getElementById('sim-messages');
+  const replayBtn = document.getElementById('sim-replay-btn');
+  const pauseBtn = document.getElementById('sim-pause-btn');
+  const pauseIcon = document.getElementById('sim-pause-icon');
+  const playIcon = document.getElementById('sim-play-icon');
+  const pauseLabel = document.getElementById('sim-pause-label');
+
+  // Drawer-side handles (right panel). The DAG renders inside the proposal accordion.
+  const drawerEl = document.getElementById('sim-drawer');
+  const drawerPlaceholderEl = document.getElementById('sim-drawer-placeholder');
+  const drawerHeaderEl = document.getElementById('sim-drawer-header');
+  const drawerStatusEl = document.getElementById('sim-drawer-status');
+  const drawerBodyEl = document.getElementById('sim-drawer-body');
+  const baselineFieldsEl = document.getElementById('sim-baseline-fields');
+  const baselineSubmitBtn = document.getElementById('sim-baseline-submit');
+  const baselineSubmitLabel = document.getElementById('sim-baseline-submit-label');
+  const baselineStatusEl = document.getElementById('sim-baseline-status');
+  const proposalTrigger = document.getElementById('sim-proposal-trigger');
+  const proposalTriggerLabel = document.getElementById('sim-proposal-trigger-label');
+  const proposalContent = document.getElementById('sim-proposal-content');
+  const proposalChevron = document.getElementById('sim-proposal-chevron');
+  const approveBtn = document.getElementById('sim-approve-btn');
+  const approveLabel = document.getElementById('sim-approve-label');
+
+  // Baseline form fields — WHO / WHAT / WHEN / ELSE (4 fields).
+  const BASELINE_FIELDS = [
+    {
+      key: 'who',
+      label: 'WHO',
+      placeholder: 'e.g. Members stuck on lesson 4 for 14+ days…',
+      filled: 'Members enrolled in React Fundamentals stalled on lesson 3 for 14+ days',
+    },
+    {
+      key: 'what',
+      label: 'WHAT',
+      placeholder: 'Hi {{first_name}}, just checking in on…',
+      filled: 'Hi {{first_name}}, noticed you paused on Components & Props — anything I can help unblock?',
+    },
+    {
+      key: 'when',
+      label: 'WHEN',
+      placeholder: 'Pick date',
+      filled: 'Today · 09:00',
+    },
+    {
+      key: 'else',
+      label: 'ELSE',
+      placeholder: 'Optional but encouraged…',
+      filled: 'Skip anyone who DM\'d staff in the last 7d.',
+    },
+  ];
+
+  function renderBaselineFieldsEmpty() {
+    if (!baselineFieldsEl) return;
+    baselineFieldsEl.innerHTML = BASELINE_FIELDS.map(f => `
+      <div data-field="${f.key}" class="rounded-md border border-slate-200 bg-slate-50/40 px-2 py-1.5">
+        <div class="flex items-center justify-between text-[10px] font-semibold uppercase tracking-wide text-slate-500">
+          <span>${f.label}</span>
+          <span data-field-check class="hidden sim-check-pop text-emerald-600">
+            <svg class="h-3 w-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.75 10.5 18.75 19.5 5.25"/></svg>
+          </span>
+        </div>
+        <p data-field-value class="mt-0.5 text-[11px] italic text-slate-400">${f.placeholder}</p>
+      </div>
+    `).join('');
+  }
+
+  function fillBaselineField(idx, instant) {
+    if (!baselineFieldsEl) return;
+    const f = BASELINE_FIELDS[idx];
+    if (!f) return;
+    const cell = baselineFieldsEl.querySelector(`[data-field="${f.key}"]`);
+    if (!cell) return;
+    const value = cell.querySelector('[data-field-value]');
+    const check = cell.querySelector('[data-field-check]');
+    if (value) {
+      value.textContent = f.filled;
+      value.className = 'mt-0.5 text-[11px] text-slate-800' + (instant ? '' : ' sim-field-pop');
+    }
+    if (check) check.classList.remove('hidden');
+    cell.classList.remove('bg-slate-50/40');
+    cell.classList.add('bg-white');
+  }
+
+  function setBaselineSubmitted(state) {
+    if (!baselineSubmitBtn || !baselineSubmitLabel || !baselineStatusEl) return;
+    if (state) {
+      baselineSubmitBtn.disabled = true;
+      baselineSubmitBtn.classList.remove('bg-violet-600', 'hover:bg-violet-700');
+      baselineSubmitBtn.classList.add('bg-emerald-600');
+      baselineSubmitLabel.textContent = 'Saved ✓';
+      baselineStatusEl.classList.remove('hidden');
+    } else {
+      baselineSubmitBtn.disabled = true;
+      baselineSubmitBtn.classList.remove('bg-emerald-600');
+      baselineSubmitBtn.classList.add('bg-violet-600', 'hover:bg-violet-700');
+      baselineSubmitLabel.textContent = 'Save baseline draft';
+      baselineStatusEl.classList.add('hidden');
+    }
+  }
+
+  function setProposalUnlocked(state) {
+    if (!proposalTrigger || !proposalTriggerLabel || !proposalContent || !proposalChevron) return;
+    if (state) {
+      proposalTrigger.disabled = false;
+      proposalTrigger.setAttribute('aria-expanded', 'true');
+      proposalTrigger.classList.remove('text-slate-500');
+      proposalTrigger.classList.add('text-slate-900');
+      proposalTriggerLabel.innerHTML = `
+        <svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z"/><path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/></svg>
+        Reveal agent's proposal`;
+      proposalContent.classList.add('is-open');
+      proposalChevron.style.transform = 'rotate(180deg)';
+    } else {
+      proposalTrigger.disabled = true;
+      proposalTrigger.setAttribute('aria-expanded', 'false');
+      proposalTrigger.classList.add('text-slate-500');
+      proposalTrigger.classList.remove('text-slate-900');
+      proposalTriggerLabel.innerHTML = `
+        <svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"/></svg>
+        Locked &mdash; submit your baseline above first`;
+      proposalContent.classList.remove('is-open');
+      proposalChevron.style.transform = 'rotate(0deg)';
+    }
+  }
+
+  function setApproveEnabled(state) {
+    if (!approveBtn || !approveLabel) return;
+    if (state) {
+      approveBtn.disabled = false;
+      approveBtn.removeAttribute('title');
+      approveBtn.classList.remove('cursor-not-allowed', 'bg-emerald-200', 'text-emerald-700/60', 'opacity-60');
+      approveBtn.classList.add('bg-emerald-600', 'text-white', 'hover:bg-emerald-700', 'sim-approve-flash');
+      approveLabel.textContent = 'Approve';
+    } else {
+      approveBtn.disabled = true;
+      approveBtn.title = 'Review the dry-run preview to approve';
+      approveBtn.classList.add('cursor-not-allowed', 'bg-emerald-200', 'text-emerald-700/60', 'opacity-60');
+      approveBtn.classList.remove('bg-emerald-600', 'text-white', 'hover:bg-emerald-700', 'sim-approve-flash');
+      approveLabel.textContent = 'Approve';
+    }
+  }
+
+  function setHeaderApproved(state) {
+    if (!drawerStatusEl) return;
+    if (state) {
+      drawerStatusEl.classList.remove('bg-violet-100', 'text-violet-700');
+      drawerStatusEl.classList.add('bg-emerald-100', 'text-emerald-700', 'sim-approve-flash');
+      drawerStatusEl.textContent = 'Approved';
+    } else {
+      drawerStatusEl.classList.add('bg-violet-100', 'text-violet-700');
+      drawerStatusEl.classList.remove('bg-emerald-100', 'text-emerald-700', 'sim-approve-flash');
+      drawerStatusEl.textContent = 'Draft';
+    }
+  }
+
+  function flashDrawerHeader() {
+    if (!drawerHeaderEl) return;
+    drawerHeaderEl.classList.remove('sim-drawer-flash');
+    // force reflow so the animation re-runs on subsequent loops
+    void drawerHeaderEl.offsetWidth;
+    drawerHeaderEl.classList.add('sim-drawer-flash');
+  }
+
+  // Drawer reveal: swap the placeholder out for the live drawer shell.
+  // animate=false skips the mount animation (used by reduced-motion + final-state).
+  function showDrawerShell(animate) {
+    if (drawerPlaceholderEl) drawerPlaceholderEl.classList.add('hidden');
+    if (!drawerEl) return;
+    drawerEl.classList.remove('hidden');
+    drawerEl.classList.add('flex');
+    drawerEl.classList.remove('sim-drawer-mount');
+    if (animate) {
+      void drawerEl.offsetWidth;
+      drawerEl.classList.add('sim-drawer-mount');
+    }
+  }
+
+  function showDrawerPlaceholder() {
+    if (drawerEl) {
+      drawerEl.classList.add('hidden');
+      drawerEl.classList.remove('flex', 'sim-drawer-mount');
+    }
+    if (drawerPlaceholderEl) drawerPlaceholderEl.classList.remove('hidden');
+  }
+
+  function resetDrawer() {
+    renderBaselineFieldsEmpty();
+    setBaselineSubmitted(false);
+    // Suppress the accordion's height transition during reset so the loop
+    // restart isn't visually noisy.
+    if (proposalContent) proposalContent.style.transition = 'none';
+    setProposalUnlocked(false);
+    if (proposalContent) {
+      void proposalContent.offsetWidth;
+      proposalContent.style.transition = '';
+    }
+    setApproveEnabled(false);
+    setHeaderApproved(false);
+    // Empty the DAG container (it lives inside the accordion now).
+    const dagContainer = document.getElementById('sim-dag');
+    if (dagContainer) dagContainer.innerHTML = '';
+    // Reset drawer scroll position so the operator sees the top on each loop.
+    if (drawerBodyEl) drawerBodyEl.scrollTop = 0;
+    // Restore the placeholder — drawer shell only appears on review-click.
+    showDrawerPlaceholder();
+  }
+
+  // dagEl is recreated by the accordion DOM, so always look it up at use time.
+  function getDagEl() { return document.getElementById('sim-dag'); }
+
+  if (!messagesEl || !replayBtn) return;
+
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Step timings (ms) — total ~30s. Reduced motion: collapse to instant final state.
+  const STEPS = [
+    { kind: 'user',      who: 'You',     text: 'Are there members stuck in any of our courses?', delay: 600 },
+    { kind: 'typing',    who: 'Beacon',  delay: 1200 },
+    { kind: 'beacon',    text: "I'm seeing <strong>12 members</strong> in <em>React Fundamentals</em> who've stalled on lesson 3 (Components &amp; Props) for 14+ days. The cohort is consistent week-over-week — it's not a churn anomaly, it's a pedagogy stick-point.", caveat: 'Based on enrollments table updated 2h ago', delay: 2200 },
+    { kind: 'typing',    who: 'Beacon',  delay: 900 },
+    { kind: 'beacon',    text: "Want me to draft a Loop DM nudge for them? You'll see exactly what would be sent before approving.", delay: 1700 },
+    { kind: 'user',      who: 'You',     text: 'Yes, draft it.', delay: 900 },
+    { kind: 'card',         delay: 1600 },
+    { kind: 'dag',          delay: 1800 },
+    { kind: 'review-click', delay: 1100 },
+    { kind: 'drawer-review', delay: 4200 },
+    { kind: 'approve',      delay: 1400 },
+    { kind: 'typing',    who: 'Beacon',  delay: 800 },
+    { kind: 'beacon',    text: "<span class='inline-flex items-center gap-1 font-medium text-emerald-700'><svg class='h-3.5 w-3.5' fill='none' stroke='currentColor' stroke-width='2.5' viewBox='0 0 24 24' aria-hidden='true'><path d='M4.5 12.75 10.5 18.75 19.5 5.25'/></svg>Sent 12 nudges.</span> Let's see who replies in the next 48h.", delay: 1500 },
+    { kind: 'pause',     delay: reduceMotion ? 0 : 3500 },
+  ];
+
+  let timer = null;
+  let stepIdx = 0;
+  let cardEl = null;
+  let paused = false;
+  let stepStartTs = 0;
+  let stepDelay = 0;
+  let pausedRemaining = 0;
+
+  function schedule(delay) {
+    stepDelay = delay;
+    stepStartTs = Date.now();
+    if (paused) {
+      pausedRemaining = delay;
+      return;
+    }
+    timer = setTimeout(step, delay);
+  }
+
+  function setPausedUI(isPaused) {
+    if (!pauseBtn) return;
+    pauseBtn.setAttribute('aria-pressed', isPaused ? 'true' : 'false');
+    if (pauseIcon && playIcon) {
+      pauseIcon.classList.toggle('hidden', isPaused);
+      playIcon.classList.toggle('hidden', !isPaused);
+    }
+    if (pauseLabel) pauseLabel.textContent = isPaused ? 'Resume' : 'Pause';
+  }
+
+  function togglePause() {
+    if (paused) {
+      paused = false;
+      setPausedUI(false);
+      const remaining = pausedRemaining > 0 ? pausedRemaining : 600;
+      pausedRemaining = 0;
+      stepStartTs = Date.now();
+      stepDelay = remaining;
+      timer = setTimeout(step, remaining);
+    } else {
+      paused = true;
+      setPausedUI(true);
+      if (timer) {
+        clearTimeout(timer);
+        timer = null;
+        const elapsed = Date.now() - stepStartTs;
+        pausedRemaining = Math.max(50, stepDelay - elapsed);
+      }
+    }
+  }
+
+  function clearAll() {
+    if (timer) { clearTimeout(timer); timer = null; }
+    clearBaselineFillTimers();
+    messagesEl.innerHTML = '';
+    cardEl = null;
+    resetDrawer();
+  }
+
+  function appendBubble(html, opts) {
+    opts = opts || {};
+    const wrap = document.createElement('div');
+    wrap.className = 'sim-bubble-enter flex items-start gap-3' + (opts.user ? ' flex-row-reverse' : '');
+    const initial = opts.user ? 'Y' : 'B';
+    const avatarColor = opts.user ? 'bg-slate-200 text-slate-700' : 'bg-amber-500 text-white';
+    const nameColor = opts.user ? 'text-slate-700' : 'text-amber-700';
+    const bubbleColor = opts.user
+      ? 'bg-indigo-50 border-indigo-100 text-slate-800'
+      : 'bg-white border-slate-200 text-slate-700';
+    const align = opts.user ? 'items-end' : 'items-start';
+    const botBadge = opts.user
+      ? ''
+      : ' <span class="ml-1 inline-flex items-center rounded bg-amber-100 px-1 py-0.5 text-[9px] font-medium text-amber-700">BOT</span>';
+    const caveatHtml = opts.caveat
+      ? `<div class="mt-0.5 inline-flex items-center gap-1.5 rounded-full bg-slate-100 px-2.5 py-1 text-[11px] font-medium text-slate-600"><svg class="h-3 w-3 text-slate-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 9v3.75m0 3.75h.008v.008H12v-.008Zm0-15A9 9 0 1 1 3 12a9 9 0 0 1 9-9Z"/></svg><span>Caveat: ${opts.caveat}</span></div>`
+      : '';
+    wrap.innerHTML = `
+      <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full ${avatarColor} text-xs font-bold">${initial}</div>
+      <div class="flex max-w-[85%] flex-col ${align} gap-1">
+        <span class="text-xs font-semibold ${nameColor}">${opts.user ? 'You' : 'Beacon'}${botBadge}</span>
+        <div class="rounded-2xl border ${bubbleColor} px-3.5 py-2.5 text-sm leading-relaxed">${html}</div>
+        ${caveatHtml}
+      </div>
+    `;
+    messagesEl.appendChild(wrap);
+    messagesEl.scrollTop = messagesEl.scrollHeight;
+    return wrap;
+  }
+
+  function appendTyping() {
+    const wrap = document.createElement('div');
+    wrap.id = 'sim-typing';
+    wrap.className = 'sim-bubble-enter flex items-center gap-2 pl-11 text-xs text-slate-500';
+    wrap.innerHTML = `
+      <div class="flex gap-1">
+        <span class="sim-typing-dot inline-block h-1.5 w-1.5 rounded-full bg-amber-400"></span>
+        <span class="sim-typing-dot inline-block h-1.5 w-1.5 rounded-full bg-amber-400"></span>
+        <span class="sim-typing-dot inline-block h-1.5 w-1.5 rounded-full bg-amber-400"></span>
+      </div>
+      <span>Beacon is typing...</span>
+    `;
+    messagesEl.appendChild(wrap);
+    messagesEl.scrollTop = messagesEl.scrollHeight;
+  }
+
+  function removeTyping() {
+    const t = document.getElementById('sim-typing');
+    if (t) t.remove();
+  }
+
+  function appendInterventionCard() {
+    const wrap = document.createElement('div');
+    wrap.className = 'sim-bubble-enter ml-11 rounded-xl border border-violet-200 bg-gradient-to-br from-violet-50/80 to-white p-4 shadow-sm';
+    wrap.id = 'sim-intervention-card';
+    wrap.innerHTML = `
+      <div class="flex items-center gap-2">
+        <svg class="h-4 w-4 text-violet-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z"/></svg>
+        <span class="text-xs font-semibold uppercase tracking-wide text-violet-700">Beacon proposed this</span>
+        <span class="ml-auto rounded-full bg-slate-100 px-2 py-0.5 text-[10px] font-medium text-slate-600">Draft</span>
+      </div>
+      <p class="mt-2 text-sm font-semibold text-slate-900">LMS course drop-off &middot; 12 members &middot; Loop DM</p>
+      <p class="mt-1 text-xs text-slate-600">Cohort stalled on lesson 3 of <em>React Fundamentals</em> for 14+ days.</p>
+      <div class="mt-3 flex flex-wrap items-center gap-2">
+        <button id="sim-review-btn" type="button" class="inline-flex items-center gap-1.5 rounded-md bg-violet-600 px-3 py-1.5 text-xs font-semibold text-white transition hover:bg-violet-700">
+          <svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z"/><path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/></svg>
+          Review &amp; tune
+        </button>
+        <button type="button" class="inline-flex items-center gap-1.5 rounded-md border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-600 transition hover:bg-slate-50">Reject</button>
+      </div>
+    `;
+    messagesEl.appendChild(wrap);
+    messagesEl.scrollTop = messagesEl.scrollHeight;
+    cardEl = wrap;
+
+    // Make Review & tune interactive — clicking jumps the simulation forward.
+    const reviewBtn = wrap.querySelector('#sim-review-btn');
+    if (reviewBtn) {
+      reviewBtn.addEventListener('click', skipToReview);
+    }
+  }
+
+  // Skip the auto-advance and immediately play the review-click + drawer-review
+  // steps, so clicking the button feels responsive.
+  function skipToReview() {
+    const reviewIdx = STEPS.findIndex(s => s.kind === 'review-click');
+    if (reviewIdx < 0 || stepIdx > reviewIdx) return;
+    if (timer) { clearTimeout(timer); timer = null; }
+    stepIdx = reviewIdx;
+    if (paused) {
+      paused = false;
+      pausedRemaining = 0;
+      setPausedUI(false);
+    }
+    step();
+  }
+
+  // DAG: HTML nodes (matching @agend/workflow-renderer node styling) over an inline SVG
+  // layer drawing the bezier edges. Coordinates expressed in pixels via a fixed viewBox.
+  function renderDag() {
+    const dagEl = getDagEl();
+    if (!dagEl) return;
+    dagEl.innerHTML = '';
+
+    const nodes = [
+      { type: 'action',  icon: 'play',   label: 'Fetch cohort',     border: 'border-l-emerald-500', iconColor: 'text-emerald-600', extraChip: null },
+      { type: 'cond',    icon: 'branch', label: 'Cohort size > 0',  border: 'border-l-amber-500',   iconColor: 'text-amber-600',   extraChip: null },
+      { type: 'api',     icon: 'send',   label: 'Send Loop DM',     border: 'border-l-violet-500',  iconColor: 'text-violet-600',  extraChip: 'loop' },
+      { type: 'end',     icon: 'check',  label: 'Done',             border: 'border-l-slate-300',   iconColor: 'text-slate-500',   extraChip: null },
+    ];
+
+    const ICONS = {
+      play:   '<svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347c-.75.412-1.667-.13-1.667-.986V5.653Z"/></svg>',
+      branch: '<svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3v12m0 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm0-12a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm12 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm0 0v6a6 6 0 0 1-6 6h-1.5"/></svg>',
+      send:   '<svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"/></svg>',
+      check:  '<svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.75 10.5 18.75 19.5 5.25"/></svg>',
+    };
+
+    // Layout constants. The SVG uses these directly as pixel coordinates.
+    const VIEW_W = 220;
+    const NODE_H = 56;
+    const NODE_GAP = 20;
+    const TOP_PAD = 4;
+    const TOTAL_H = TOP_PAD + nodes.length * NODE_H + (nodes.length - 1) * NODE_GAP;
+
+    // Outer relative wrapper that constrains both layers.
+    const stage = document.createElement('div');
+    stage.className = 'relative mx-auto flex flex-col items-center';
+    stage.style.width = VIEW_W + 'px';
+    stage.style.gap = NODE_GAP + 'px';
+
+    // SVG edges layer (absolutely positioned behind nodes)
+    const svgNs = 'http://www.w3.org/2000/svg';
+    const svg = document.createElementNS(svgNs, 'svg');
+    svg.setAttribute('class', 'absolute inset-0 pointer-events-none');
+    svg.setAttribute('width', String(VIEW_W));
+    svg.setAttribute('height', String(TOTAL_H));
+    svg.setAttribute('viewBox', `0 0 ${VIEW_W} ${TOTAL_H}`);
+    svg.setAttribute('aria-hidden', 'true');
+    const cx = VIEW_W / 2;
+
+    for (let i = 0; i < nodes.length - 1; i++) {
+      const y1 = TOP_PAD + (i + 1) * NODE_H + i * NODE_GAP - 2;
+      const y2 = y1 + NODE_GAP + 4;
+      const midY = (y1 + y2) / 2;
+      // Subtle bezier — keeps it visually similar to the React Flow default smoothstep.
+      const path = document.createElementNS(svgNs, 'path');
+      path.setAttribute('d', `M ${cx} ${y1} C ${cx - 8} ${midY}, ${cx + 8} ${midY}, ${cx} ${y2 - 5}`);
+      path.setAttribute('stroke', '#94a3b8');
+      path.setAttribute('stroke-width', '1.5');
+      path.setAttribute('fill', 'none');
+      path.setAttribute('class', 'sim-dag-edge');
+      path.style.animationDelay = (0.15 + i * 0.18) + 's';
+      svg.appendChild(path);
+      // Arrowhead at tail
+      const arrow = document.createElementNS(svgNs, 'path');
+      arrow.setAttribute('d', `M ${cx - 4} ${y2 - 9} L ${cx} ${y2 - 4} L ${cx + 4} ${y2 - 9}`);
+      arrow.setAttribute('stroke', '#94a3b8');
+      arrow.setAttribute('stroke-width', '1.5');
+      arrow.setAttribute('fill', 'none');
+      arrow.setAttribute('stroke-linecap', 'round');
+      arrow.setAttribute('stroke-linejoin', 'round');
+      arrow.setAttribute('class', 'sim-dag-edge');
+      arrow.style.animationDelay = (0.15 + i * 0.18 + 0.1) + 's';
+      svg.appendChild(arrow);
+    }
+    stage.appendChild(svg);
+
+    // HTML nodes layered above the SVG
+    nodes.forEach((n, i) => {
+      const nodeEl = document.createElement('div');
+      nodeEl.className = `sim-dag-node relative z-10 w-full rounded-md border border-slate-200 ${n.border} border-l-4 bg-white px-2 py-1.5 shadow-sm`;
+      nodeEl.style.animationDelay = (0.1 + i * 0.22) + 's';
+      const connectorChip = n.extraChip === 'loop'
+        ? `<span class="inline-flex items-center gap-1 rounded-full bg-violet-100 px-2 py-0.5 text-[10px] font-medium text-violet-700"><svg class="h-2.5 w-2.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.67 1.09-.086 2.17-.208 3.238-.365 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"/></svg>Loop DM</span>`
+        : '';
+      nodeEl.innerHTML = `
+        <div class="flex items-center gap-2">
+          <span class="${n.iconColor}">${ICONS[n.icon]}</span>
+          <span class="text-sm font-semibold text-slate-800">${n.label}</span>
+        </div>
+        <div class="mt-1.5 flex flex-wrap items-center gap-1.5">
+          <span class="inline-flex items-center gap-1 rounded-full bg-slate-100 px-2 py-0.5 text-[10px] font-medium text-slate-600">
+            <span class="inline-block h-1.5 w-1.5 rounded-full bg-emerald-500" aria-hidden="true"></span>
+            Account: wdaa
+          </span>
+          ${connectorChip}
+        </div>
+      `;
+      stage.appendChild(nodeEl);
+    });
+
+    dagEl.appendChild(stage);
+  }
+
+  function flashReviewClick() {
+    if (cardEl) {
+      const btn = cardEl.querySelector('#sim-review-btn');
+      if (btn) btn.classList.add('sim-review-pulse');
+    }
+    // The drawer is mounted by the operator's click — replace the placeholder
+    // with the drawer shell, then flash the header to confirm landing.
+    showDrawerShell(!reduceMotion);
+    flashDrawerHeader();
+  }
+
+  // Track the field-fill timers so pause/resume + replay can clean them up.
+  let baselineFillTimers = [];
+  function clearBaselineFillTimers() {
+    baselineFillTimers.forEach(t => clearTimeout(t));
+    baselineFillTimers = [];
+  }
+
+  function showDrawerReview() {
+    // 1) Append a small chat-side note so the conversation reads naturally.
+    if (cardEl) {
+      const note = document.createElement('div');
+      note.className = 'sim-bubble-enter mt-3 space-y-1 rounded-lg border border-slate-200 bg-slate-50/80 p-2.5 text-[11px] text-slate-600';
+      note.id = 'sim-drawer-review';
+      note.innerHTML = `
+        <div class="flex items-center gap-1.5 font-medium text-slate-700">
+          <svg class="h-3 w-3 text-violet-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z"/><path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/></svg>
+          <span>Operator opened the drawer</span>
+        </div>
+        <div class="flex items-center gap-1.5 pl-4"><svg class="h-3 w-3 text-emerald-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.75 10.5 18.75 19.5 5.25"/></svg><span>Baseline draft saved &mdash; soft-gate cleared</span></div>
+        <div class="flex items-center gap-1.5 pl-4"><svg class="h-3 w-3 text-emerald-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.75 10.5 18.75 19.5 5.25"/></svg><span>Reviewed DAG, consent table, dry-run preview</span></div>
+        <div class="flex items-center gap-1.5 pl-4"><svg class="h-3 w-3 text-emerald-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.75 10.5 18.75 19.5 5.25"/></svg><span>Approve unlocked</span></div>
+      `;
+      cardEl.appendChild(note);
+      messagesEl.scrollTop = messagesEl.scrollHeight;
+    }
+
+    // 2) Drive the drawer-side animation: form fields fill one-by-one, then
+    //    the soft-gate accordion auto-expands.
+    clearBaselineFillTimers();
+    BASELINE_FIELDS.forEach((_, i) => {
+      const t = setTimeout(() => fillBaselineField(i, false), 250 + i * 350);
+      baselineFillTimers.push(t);
+    });
+    const finishT = setTimeout(() => {
+      setBaselineSubmitted(true);
+      setProposalUnlocked(true);
+      // Scroll the body so the operator visually "lands" inside the proposal.
+      if (drawerBodyEl) {
+        drawerBodyEl.scrollTo({ top: 220, behavior: 'smooth' });
+      }
+    }, 250 + BASELINE_FIELDS.length * 350 + 150);
+    baselineFillTimers.push(finishT);
+  }
+
+  function flashApprove() {
+    // Chat-side card: flip Draft → Approved
+    if (cardEl) {
+      const draftBadge = cardEl.querySelector('span.bg-slate-100');
+      if (draftBadge) {
+        draftBadge.classList.add('sim-approve-flash');
+        draftBadge.className = 'sim-approve-flash ml-auto rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-medium text-emerald-700';
+        draftBadge.textContent = 'Approved';
+      }
+    }
+    // Drawer-side: enable Approve + flip header status
+    setApproveEnabled(true);
+    setHeaderApproved(true);
+    if (drawerBodyEl) {
+      drawerBodyEl.scrollTo({ top: drawerBodyEl.scrollHeight, behavior: 'smooth' });
+    }
+  }
+
+  function step() {
+    if (stepIdx >= STEPS.length) {
+      // Loop
+      stepIdx = 0;
+      clearAll();
+      schedule(800);
+      return;
+    }
+    const s = STEPS[stepIdx++];
+    switch (s.kind) {
+      case 'user':
+        appendBubble(s.text, { user: true });
+        break;
+      case 'typing':
+        appendTyping();
+        break;
+      case 'beacon':
+        removeTyping();
+        appendBubble(s.text, { user: false, caveat: s.caveat });
+        break;
+      case 'card':
+        appendInterventionCard();
+        break;
+      case 'dag':
+        renderDag();
+        break;
+      case 'review-click':
+        flashReviewClick();
+        break;
+      case 'drawer-review':
+        showDrawerReview();
+        break;
+      case 'approve':
+        flashApprove();
+        break;
+      case 'pause':
+        // hold last frame
+        break;
+    }
+    const delay = reduceMotion ? 50 : (s.delay || 800);
+    schedule(delay);
+  }
+
+  function renderFullFinalDrawer() {
+    // Render the drawer in its end state — every section visible, baseline
+    // saved, accordion open, DAG drawn, Approve enabled, header = Approved.
+    showDrawerShell(false);
+    renderBaselineFieldsEmpty();
+    BASELINE_FIELDS.forEach((_, i) => fillBaselineField(i, true));
+    setBaselineSubmitted(true);
+    setProposalUnlocked(true);
+    renderDag();
+    setApproveEnabled(true);
+    setHeaderApproved(true);
+  }
+
+  function start() {
+    clearAll();
+    stepIdx = 0;
+    if (reduceMotion) {
+      // Render the final state immediately and don't loop
+      appendBubble('Are there members stuck in any of our courses?', { user: true });
+      appendBubble("I'm seeing <strong>12 members</strong> in <em>React Fundamentals</em> who've stalled on lesson 3 (Components &amp; Props) for 14+ days.", { user: false, caveat: 'Based on enrollments table updated 2h ago' });
+      appendBubble("Want me to draft a Loop DM nudge for them? You'll see exactly what would be sent before approving.", { user: false });
+      appendBubble('Yes, draft it.', { user: true });
+      appendInterventionCard();
+      renderFullFinalDrawer();
+      appendBubble("<span class='inline-flex items-center gap-1 font-medium text-emerald-700'>Sent 12 nudges.</span> Let's see who replies in the next 48h.", { user: false });
+      return;
+    }
+    // Right panel starts as the calm placeholder on every loop. The drawer
+    // shell only mounts when the operator hits Review & tune (review-click).
+    paused = false;
+    pausedRemaining = 0;
+    setPausedUI(false);
+    schedule(600);
+  }
+
+  replayBtn.addEventListener('click', start);
+  if (pauseBtn) {
+    if (reduceMotion) {
+      pauseBtn.classList.add('hidden');
+    } else {
+      pauseBtn.addEventListener('click', togglePause);
+    }
+  }
+
+  // Auto-start when scrolled into view (or immediately if already visible).
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          start();
+          io.disconnect();
+        }
+      });
+    }, { threshold: 0.25 });
+    io.observe(document.getElementById('in-motion'));
+  } else {
+    start();
+  }
+})();
+</script>
+
+</body>
+</html>
