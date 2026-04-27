@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO -->
+  <title>AI Everywhere &mdash; Agend Orchestrate</title>
+  <meta name="description" content="Sixteen distinct AI capabilities woven through 20 apps. Image generation, course drafting, member intelligence, compliance, and more — running quietly under associations like WDAA.">
+  <meta name="keywords" content="AI everywhere, association AI, AI platform, multi-agent, member intelligence, AI image generation, AI course creation, RFP automation, association management, AMS Lite, Agend">
+  <meta name="author" content="Agend">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://orchestrate.agend.com.au/ai-everywhere">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://orchestrate.agend.com.au/ai-everywhere">
+  <meta property="og:title" content="AI Everywhere — Agend Orchestrate">
+  <meta property="og:description" content="Sixteen distinct AI capabilities woven through 20 apps. Image generation, course drafting, member intelligence, compliance, and more — running quietly under associations like WDAA.">
+  <meta property="og:image" content="https://orchestrate.agend.com.au/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="AI Everywhere — sixteen AI capabilities across the Agend platform">
+  <meta property="og:site_name" content="Agend Orchestrate">
+  <meta property="og:locale" content="en_AU">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://orchestrate.agend.com.au/ai-everywhere">
+  <meta name="twitter:title" content="AI Everywhere — Agend Orchestrate">
+  <meta name="twitter:description" content="Sixteen distinct AI capabilities woven through 20 apps. Not a chatbot. A pipeline.">
+  <meta name="twitter:image" content="https://orchestrate.agend.com.au/og-image.png">
+  <meta name="twitter:image:alt" content="AI Everywhere — sixteen AI capabilities across the Agend platform">
+
+  <!-- Favicon (inline SVG data URI) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%236366f1'/%3E%3Cstop offset='100%25' stop-color='%237c3aed'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='url(%23g)'/%3E%3Cpath d='M16 7l-1.5 6.5a4 4 0 01-3 3L5 18l6.5 1.5a4 4 0 013 3L16 29l1.5-6.5a4 4 0 013-3L27 18l-6.5-1.5a4 4 0 01-3-3Z' fill='white' opacity='.9'/%3E%3C/svg%3E">
+  <meta name="theme-color" content="#4f46e5">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Agend — AI Everywhere",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "description": "Sixteen distinct AI capabilities across 20 apps in the Agend platform — image generation, course drafting, member intelligence, RFP analysis, compliance monitoring, and more — built for member-based organisations.",
+    "url": "https://orchestrate.agend.com.au/ai-everywhere",
+    "image": "https://orchestrate.agend.com.au/og-image.png",
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/PreOrder",
+      "price": "0",
+      "priceCurrency": "AUD"
+    },
+    "creator": {
+      "@type": "Organization",
+      "name": "Agend",
+      "url": "https://orchestrate.agend.com.au"
+    },
+    "featureList": [
+      "AI image generation in association brand (Imagen 3.0)",
+      "Auto image tagging and library organisation (Gemini 2.0 Flash)",
+      "AI course drafting from source documents (Claude)",
+      "Six specialist conversational agents (Claude Opus 4.7 + Haiku 4.5)",
+      "Membership renewal-risk and engagement scoring",
+      "Sponsorship revenue strategy and pricing analysis",
+      "Compliance posture and audit watch",
+      "RFP requirement extraction with confidence scoring",
+      "Capability matching against platform registry",
+      "User story and UAT auto-drafts",
+      "Workflow auto-classification",
+      "Anomaly detection (duplicates, over-allocation)",
+      "Embedded workflow AI assistant",
+      "AI email drafting with tone control",
+      "Deal activity summarisation",
+      "Hybrid semantic + keyword member search"
+    ]
+  }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          animation: {
+            'fade-up': 'fadeUp 0.6s ease-out both',
+            'fade-in': 'fadeIn 0.5s ease-out both',
+          },
+          keyframes: {
+            fadeUp: {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .gradient-text {
+      background: linear-gradient(135deg, #6366f1, #8b5cf6, #10b981);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .animate-fade-up { animation: fadeUp 0.6s ease-out both; }
+    @keyframes fadeUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .nav-link { font-size: 0.875rem; line-height: 1.25rem; font-weight: 500; color: rgb(71 85 105); transition: color 150ms; }
+    .nav-link:hover { color: rgb(15 23 42); }
+    .scroll-smooth { scroll-behavior: smooth; }
+
+    /* Constellation */
+    .constellation-rotor { animation: rotate 60s linear infinite; transform-origin: 50% 50%; }
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(360deg); }
+    }
+    /* Counter-rotate the pills so labels stay upright */
+    .constellation-counter { animation: counter-rotate 60s linear infinite; transform-origin: 50% 50%; transform-box: fill-box; }
+    @keyframes counter-rotate {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(-360deg); }
+    }
+    .constellation-line { stroke-dasharray: 4 6; animation: dash 4s linear infinite, pulseOpacity 3s ease-in-out infinite; }
+    @keyframes dash {
+      to { stroke-dashoffset: -100; }
+    }
+    @keyframes pulseOpacity {
+      0%, 100% { opacity: 0.18; }
+      50%      { opacity: 0.55; }
+    }
+    .core-pulse { animation: corePulse 3s ease-in-out infinite; transform-origin: center; transform-box: fill-box; }
+    @keyframes corePulse {
+      0%, 100% { transform: scale(1); opacity: 0.85; }
+      50%      { transform: scale(1.08); opacity: 1; }
+    }
+    .core-aura { animation: auraPulse 3s ease-in-out infinite; transform-origin: center; transform-box: fill-box; }
+    @keyframes auraPulse {
+      0%, 100% { opacity: 0.18; transform: scale(1); }
+      50%      { opacity: 0.42; transform: scale(1.18); }
+    }
+
+    /* Stagger fade-up by data-delay */
+    [data-fade] { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+    [data-fade].is-visible { opacity: 1; transform: translateY(0); }
+
+    /* Counter style */
+    .counter { font-variant-numeric: tabular-nums; }
+
+    /* Capability accent stripe */
+    .cap-stripe { height: 4px; border-top-left-radius: 0.75rem; border-top-right-radius: 0.75rem; }
+
+    /* Timeline */
+    .timeline-spine { background: linear-gradient(to bottom, #c7d2fe, #ddd6fe, #a7f3d0); }
+
+    @media (prefers-reduced-motion: reduce) {
+      .constellation-rotor, .constellation-counter, .constellation-line, .core-pulse, .core-aura, .animate-fade-up { animation: none !important; }
+      [data-fade] { opacity: 1; transform: none; transition: none; }
+      html { scroll-behavior: auto; }
+    }
+  </style>
+</head>
+<body class="bg-white text-slate-900 scroll-smooth" data-page="ai-everywhere">
+
+<!-- HEADER START -->
+<nav class="sticky top-0 z-50 border-b border-slate-200 bg-white/80 backdrop-blur-md">
+  <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
+    <a href="/" class="flex items-center gap-2">
+      <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-indigo-600 to-violet-600">
+        <svg class="h-5 w-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.3 24.3 0 0 1 4.5 0m0 0v5.714a2.25 2.25 0 0 0 .659 1.591L19 14.5M14.25 3.104c.251.023.501.05.75.082M19 14.5l-2.47 2.47a2.25 2.25 0 0 1-1.591.659H9.061a2.25 2.25 0 0 1-1.591-.659L5 14.5m14 0V20a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-5.5"/></svg>
+      </div>
+      <span class="text-lg font-bold">Agend <span class="gradient-text">Orchestrate</span></span>
+    </a>
+    <div class="hidden items-center gap-6 sm:flex">
+      <a href="/ai-agents/associations" data-nav="associations" class="nav-link">For Associations</a>
+      <a href="/ai-everywhere" data-nav="ai-everywhere" class="nav-link">AI Everywhere</a>
+      <a href="/ai-agents" data-nav="ai-agents" class="nav-link">AI Agents</a>
+      <a href="/ai-agents/autonomous" data-nav="autonomous" class="nav-link">Autonomous AI</a>
+      <a href="/ai-agents/shipped" data-nav="shipped" class="nav-link">Just Shipped</a>
+      <a href="/#chat-demo" data-nav="demo" class="rounded-full bg-indigo-600 px-5 py-2 text-sm font-medium text-white transition hover:bg-indigo-700">See Demo</a>
+    </div>
+    <button type="button" data-mobile-toggle aria-label="Toggle navigation" class="inline-flex items-center justify-center rounded-md p-2 text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 sm:hidden">
+      <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg>
+    </button>
+  </div>
+  <div data-mobile-menu class="hidden border-t border-slate-200 bg-white sm:hidden">
+    <div class="mx-auto flex max-w-6xl flex-col gap-1 px-4 py-3 sm:px-6">
+      <a href="/ai-agents/associations" data-nav="associations" class="nav-link block py-2">For Associations</a>
+      <a href="/ai-everywhere" data-nav="ai-everywhere" class="nav-link block py-2">AI Everywhere</a>
+      <a href="/ai-agents" data-nav="ai-agents" class="nav-link block py-2">AI Agents</a>
+      <a href="/ai-agents/autonomous" data-nav="autonomous" class="nav-link block py-2">Autonomous AI</a>
+      <a href="/ai-agents/shipped" data-nav="shipped" class="nav-link block py-2">Just Shipped</a>
+      <a href="/#chat-demo" data-nav="demo" class="mt-2 inline-flex items-center justify-center rounded-full bg-indigo-600 px-5 py-2 text-sm font-medium text-white transition hover:bg-indigo-700">See Demo</a>
+    </div>
+  </div>
+</nav>
+<!-- HEADER END -->
+
+<main>
+
+  <!-- ============================================================ -->
+  <!-- 1. HERO                                                       -->
+  <!-- ============================================================ -->
+  <section class="relative overflow-hidden bg-gradient-to-b from-slate-50 to-white">
+    <!-- Soft background ornaments -->
+    <div class="pointer-events-none absolute -top-32 -right-24 h-96 w-96 rounded-full bg-indigo-200/30 blur-3xl"></div>
+    <div class="pointer-events-none absolute -bottom-32 -left-24 h-96 w-96 rounded-full bg-emerald-200/30 blur-3xl"></div>
+
+    <div class="relative mx-auto max-w-6xl px-4 py-20 text-center sm:px-6 lg:py-28">
+      <div class="animate-fade-up">
+        <span class="inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-indigo-50 px-4 py-1.5 text-sm font-medium text-indigo-700">
+          <span class="h-2 w-2 rounded-full bg-indigo-500"></span>
+          AI Across the Entire Platform
+        </span>
+      </div>
+      <h1 class="mt-8 text-5xl font-extrabold tracking-tight sm:text-6xl lg:text-7xl" style="animation: fadeUp 0.6s ease-out 0.1s both">
+        AI is <span class="gradient-text">everywhere</span> in Agend
+      </h1>
+      <p class="mx-auto mt-6 max-w-3xl text-lg text-slate-600 sm:text-xl" style="animation: fadeUp 0.6s ease-out 0.2s both">
+        Not bolted on. Not a chatbot in the corner. AI is woven through every one of our 20 apps &mdash; generating courses, drafting emails, matching capabilities, scoring engagement, and watching for trouble &mdash; so the people running associations like WDAA can stop juggling tools and start leading their members.
+      </p>
+      <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row" style="animation: fadeUp 0.6s ease-out 0.3s both">
+        <a href="#capabilities" class="inline-flex items-center gap-2 rounded-full bg-indigo-600 px-8 py-3 text-base font-medium text-white shadow-lg transition hover:bg-indigo-700 hover:shadow-xl">
+          See the capabilities
+          <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+        </a>
+        <a href="#wdaa-day" class="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-8 py-3 text-base font-medium text-slate-800 shadow-sm transition hover:border-slate-400 hover:shadow-md">
+          Read WDAA&rsquo;s day
+          <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+        </a>
+      </div>
+
+      <!-- ====================================================== -->
+      <!-- AI Constellation                                        -->
+      <!-- ====================================================== -->
+      <div class="mt-16 flex justify-center" style="animation: fadeUp 0.6s ease-out 0.4s both">
+        <div class="relative w-full max-w-3xl">
+          <svg viewBox="0 0 720 720" class="w-full" role="img" aria-label="Agend AI constellation: a central AI core surrounded by 15 connected apps">
+            <defs>
+              <radialGradient id="coreGradient" cx="50%" cy="50%" r="50%">
+                <stop offset="0%"   stop-color="#a5b4fc"/>
+                <stop offset="60%"  stop-color="#6366f1"/>
+                <stop offset="100%" stop-color="#4338ca"/>
+              </radialGradient>
+              <radialGradient id="auraGradient" cx="50%" cy="50%" r="50%">
+                <stop offset="0%"   stop-color="#8b5cf6" stop-opacity="0.55"/>
+                <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+              </radialGradient>
+              <linearGradient id="lineGradient" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%"   stop-color="#6366f1" stop-opacity="0.0"/>
+                <stop offset="50%"  stop-color="#8b5cf6" stop-opacity="0.7"/>
+                <stop offset="100%" stop-color="#10b981" stop-opacity="0.0"/>
+              </linearGradient>
+            </defs>
+
+            <!-- Core aura (static centre, subtle pulse) -->
+            <circle cx="360" cy="360" r="120" fill="url(#auraGradient)" class="core-aura"/>
+
+            <!-- Rotating ring containing connectors + satellites -->
+            <g class="constellation-rotor">
+              <!-- Faint orbit ring -->
+              <circle cx="360" cy="360" r="270" fill="none" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2 6"/>
+
+              <!-- Connector lines from core to each satellite (15 satellites) -->
+              <!-- 360 - 270*sin(theta), 360 - 270*cos(theta); we'll use precomputed positions below for both line endpoints and pills. -->
+              <g stroke="url(#lineGradient)" stroke-width="1.5" fill="none" class="constellation-line">
+                <line x1="360" y1="360" x2="360" y2="90"/>
+                <line x1="360" y1="360" x2="468" y2="115"/>
+                <line x1="360" y1="360" x2="569" y2="167"/>
+                <line x1="360" y1="360" x2="623" y2="262"/>
+                <line x1="360" y1="360" x2="630" y2="360"/>
+                <line x1="360" y1="360" x2="623" y2="458"/>
+                <line x1="360" y1="360" x2="569" y2="553"/>
+                <line x1="360" y1="360" x2="468" y2="605"/>
+                <line x1="360" y1="360" x2="360" y2="630"/>
+                <line x1="360" y1="360" x2="252" y2="605"/>
+                <line x1="360" y1="360" x2="151" y2="553"/>
+                <line x1="360" y1="360" x2="97"  y2="458"/>
+                <line x1="360" y1="360" x2="90"  y2="360"/>
+                <line x1="360" y1="360" x2="97"  y2="262"/>
+                <line x1="360" y1="360" x2="151" y2="167"/>
+                <line x1="360" y1="360" x2="252" y2="115"/>
+              </g>
+
+              <!-- Satellite pills (15 apps). Each pill is wrapped so it counter-rotates and stays upright. -->
+              <!-- Studio (3064) -->
+              <g transform="translate(360 90)"><g class="constellation-counter"><rect x="-58" y="-16" width="116" height="32" rx="16" fill="#ffffff" stroke="#a5b4fc"/><text x="0" y="-1" text-anchor="middle" font-size="11" font-weight="600" fill="#312e81">Studio</text><text x="0" y="11" text-anchor="middle" font-size="9" fill="#64748b">Port 3064</text></g></g>
+              <!-- Course Creator (3073) -->
+              <g transform="translate(468 115)"><g class="constellation-counter"><rect x="-72" y="-16" width="144" height="32" rx="16" fill="#ffffff" stroke="#86efac"/><text x="0" y="-1" text-anchor="middle" font-size="11" font-weight="600" fill="#064e3b">Course Creator</text><text x="0" y="11" text-anchor="middle" font-size="9" fill="#64748b">Port 3073</text></g></g>
+              <!-- LMS (3062) -->
+              <g transform="translate(569 167)"><g class="constellation-counter"><rect x="-46" y="-16" width="92" height="32" rx="16" fill="#ffffff" stroke="#86efac"/><text x="0" y="-1" text-anchor="middle" font-size="11" font-weight="600" fill="#064e3b">LMS</text><text x="0" y="11" text-anchor="middle" font-size="9" fill="#64748b">Port 3062</text></g></g>
+              <!-- Loop (3063) -->
+              <g transform="translate(623 262)"><g class="constellation-counter"><rect x="-46" y="-16" width="92" height="32" rx="16" fill="#ffffff" stroke="#fcd34d"/><text x="0" y="-1" text-anchor="middle" font-size="11" font-weight="600" fill="#78350f">Loop</text><text x="0" y="11" text-anchor="middle" font-size="9" fill="#64748b">Port 3063</text></g></g>
+              <!-- Web (3060) -->
+              <g transform="translate(630 360)"><g class="constellation-counter"><rect x="-58" y="-16" width="116" height="32" rx="16" fill="#ffffff" stroke="#a5b4fc"/><text x="0" y="-1" text-anchor="middle" font-size="11" font-weight="600" fill="#312e81">Dashboard</text><text x="0" y="11" text-anchor="middle" font-size="9" fill="#64748b">Port 3060</text></g></g>
+              <!-- ScopeSync (3065) -->
+              <g transform="translate(623 458)"><g class="constellation-counter"><rect x="-56" y="-16" width="112" height="32" rx="16" fill="#ffffff" stroke="#93c5fd"/><text x="0" y="-1" text-anchor="middle" font-size="11" font-weight="600" fill="#1e3a8a">ScopeSync</text><text x="0" y="11" text-anchor="middle" font-size="9" fill="#64748b">Port 3065</text></g></g>
+              <!-- Atlas / QMS (3066) -->
+              <g transform="translate(569 553)"><g class="constellation-counter"><rect x="-58" y="-16" width="116" height="32" rx="16" fill="#ffffff" stroke="#93c5fd"/><text x="0" y="-1" text-anchor="middle" font-size="11" font-weight="600" fill="#1e3a8a">Atlas / QMS</text><text x="0" y="11" text-anchor="middle" font-size="9" fill="#64748b">Port 3066</text></g></g>
+              <!-- CMS (3067) -->
+              <g transform="translate(468 605)"><g class="constellation-counter"><rect x="-46" y="-16" width="92" height="32" rx="16" fill="#ffffff" stroke="#c4b5fd"/><text x="0" y="-1" text-anchor="middle" font-size="11" font-weight="600" fill="#4c1d95">CMS</text><text x="0" y="11" text-anchor="middle" font-size="9" fill="#64748b">Port 3067</text></g></g>
+              <!-- CRM (3069) -->
+              <g transform="translate(360 630)"><g class="constellation-counter"><rect x="-46" y="-16" width="92" height="32" rx="16" fill="#ffffff" stroke="#fca5a5"/><text x="0" y="-1" text-anchor="middle" font-size="11" font-weight="600" fill="#7f1d1d">CRM</text><text x="0" y="11" text-anchor="middle" font-size="9" fill="#64748b">Port 3069</text></g></g>
+              <!-- Directory (3061) -->
+              <g transform="translate(252 605)"><g class="constellation-counter"><rect x="-50" y="-16" width="100" height="32" rx="16" fill="#ffffff" stroke="#86efac"/><text x="0" y="-1" text-anchor="middle" font-size="11" font-weight="600" fill="#064e3b">Directory</text><text x="0" y="11" text-anchor="middle" font-size="9" fill="#64748b">Port 3061</text></g></g>
+              <!-- Events (3070) -->
+              <g transform="translate(151 553)"><g class="constellation-counter"><rect x="-46" y="-16" width="92" height="32" rx="16" fill="#ffffff" stroke="#fcd34d"/><text x="0" y="-1" text-anchor="middle" font-size="11" font-weight="600" fill="#78350f">Events</text><text x="0" y="11" text-anchor="middle" font-size="9" fill="#64748b">Port 3070</text></g></g>
+              <!-- Jobs (3071) -->
+              <g transform="translate(97 458)"><g class="constellation-counter"><rect x="-46" y="-16" width="92" height="32" rx="16" fill="#ffffff" stroke="#fdba74"/><text x="0" y="-1" text-anchor="middle" font-size="11" font-weight="600" fill="#7c2d12">Jobs</text><text x="0" y="11" text-anchor="middle" font-size="9" fill="#64748b">Port 3071</text></g></g>
+              <!-- Dev Tool (3068) -->
+              <g transform="translate(90 360)"><g class="constellation-counter"><rect x="-50" y="-16" width="100" height="32" rx="16" fill="#ffffff" stroke="#cbd5e1"/><text x="0" y="-1" text-anchor="middle" font-size="11" font-weight="600" fill="#334155">Dev Tool</text><text x="0" y="11" text-anchor="middle" font-size="9" fill="#64748b">Port 3068</text></g></g>
+              <!-- Imagend -->
+              <g transform="translate(97 262)"><g class="constellation-counter"><rect x="-46" y="-16" width="92" height="32" rx="16" fill="#ffffff" stroke="#c4b5fd"/><text x="0" y="-1" text-anchor="middle" font-size="11" font-weight="600" fill="#4c1d95">Imagend</text><text x="0" y="11" text-anchor="middle" font-size="9" fill="#64748b">Vision</text></g></g>
+              <!-- QMS Tools -->
+              <g transform="translate(151 167)"><g class="constellation-counter"><rect x="-50" y="-16" width="100" height="32" rx="16" fill="#ffffff" stroke="#93c5fd"/><text x="0" y="-1" text-anchor="middle" font-size="11" font-weight="600" fill="#1e3a8a">QMS Tools</text><text x="0" y="11" text-anchor="middle" font-size="9" fill="#64748b">Atlas</text></g></g>
+              <!-- Insights -->
+              <g transform="translate(252 115)"><g class="constellation-counter"><rect x="-46" y="-16" width="92" height="32" rx="16" fill="#ffffff" stroke="#a5b4fc"/><text x="0" y="-1" text-anchor="middle" font-size="11" font-weight="600" fill="#312e81">Insights</text><text x="0" y="11" text-anchor="middle" font-size="9" fill="#64748b">Cross-app</text></g></g>
+            </g>
+
+            <!-- Core (drawn last so it sits on top) -->
+            <g>
+              <circle cx="360" cy="360" r="68" fill="url(#coreGradient)" class="core-pulse"/>
+              <text x="360" y="354" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff" letter-spacing="2">AI</text>
+              <text x="360" y="376" text-anchor="middle" font-size="11" font-weight="500" fill="#ffffff" opacity="0.85">CORE</text>
+            </g>
+          </svg>
+          <p class="mt-4 text-center text-xs text-slate-500">15 apps. One AI core. Each app uses the layer differently &mdash; same audited, tenant-scoped pipeline underneath.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 2. THE AI LAYER                                               -->
+  <!-- ============================================================ -->
+  <section class="bg-white py-16 lg:py-24">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <span class="inline-flex items-center gap-2 rounded-full border border-violet-200 bg-violet-50 px-3 py-1 text-xs font-medium text-violet-700">Architecture</span>
+        <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">Not a feature. <span class="gradient-text">A pipeline.</span></h2>
+        <p class="mx-auto mt-4 max-w-2xl text-lg text-slate-600">One stack from app to model. One contract for every association. One audit trail for every query.</p>
+      </div>
+
+      <div class="mt-14 grid gap-10 lg:grid-cols-2 lg:items-center">
+
+        <!-- LEFT: stacked layer diagram -->
+        <div data-fade class="rounded-2xl border border-slate-200 bg-gradient-to-b from-slate-50 to-white p-6 sm:p-8">
+          <!-- Layer 1: Apps -->
+          <div class="rounded-xl border border-indigo-200 bg-indigo-50/60 p-4">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-bold uppercase tracking-wider text-indigo-700">Layer 1</span>
+              <span class="text-xs font-semibold text-indigo-700">Apps (15+)</span>
+            </div>
+            <div class="mt-3 flex flex-wrap gap-1.5">
+              <span class="rounded-md bg-white px-2 py-1 text-[10px] font-medium text-slate-700 ring-1 ring-slate-200">Studio</span>
+              <span class="rounded-md bg-white px-2 py-1 text-[10px] font-medium text-slate-700 ring-1 ring-slate-200">Course Creator</span>
+              <span class="rounded-md bg-white px-2 py-1 text-[10px] font-medium text-slate-700 ring-1 ring-slate-200">LMS</span>
+              <span class="rounded-md bg-white px-2 py-1 text-[10px] font-medium text-slate-700 ring-1 ring-slate-200">Loop</span>
+              <span class="rounded-md bg-white px-2 py-1 text-[10px] font-medium text-slate-700 ring-1 ring-slate-200">Dashboard</span>
+              <span class="rounded-md bg-white px-2 py-1 text-[10px] font-medium text-slate-700 ring-1 ring-slate-200">ScopeSync</span>
+              <span class="rounded-md bg-white px-2 py-1 text-[10px] font-medium text-slate-700 ring-1 ring-slate-200">Atlas/QMS</span>
+              <span class="rounded-md bg-white px-2 py-1 text-[10px] font-medium text-slate-700 ring-1 ring-slate-200">CMS</span>
+              <span class="rounded-md bg-white px-2 py-1 text-[10px] font-medium text-slate-700 ring-1 ring-slate-200">CRM</span>
+              <span class="rounded-md bg-white px-2 py-1 text-[10px] font-medium text-slate-700 ring-1 ring-slate-200">Directory</span>
+              <span class="rounded-md bg-white px-2 py-1 text-[10px] font-medium text-slate-700 ring-1 ring-slate-200">Events</span>
+              <span class="rounded-md bg-white px-2 py-1 text-[10px] font-medium text-slate-700 ring-1 ring-slate-200">Jobs</span>
+              <span class="rounded-md bg-white px-2 py-1 text-[10px] font-medium text-slate-700 ring-1 ring-slate-200">+4</span>
+            </div>
+          </div>
+
+          <!-- Connector arrow -->
+          <div class="my-3 flex justify-center"><svg class="h-5 w-5 text-slate-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg></div>
+
+          <!-- Layer 2: Agents -->
+          <div class="rounded-xl border border-emerald-200 bg-emerald-50/60 p-4">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-700">Layer 2</span>
+              <span class="text-xs font-semibold text-emerald-700">Agent specialists (6)</span>
+            </div>
+            <div class="mt-3 grid grid-cols-3 gap-1.5 sm:grid-cols-6">
+              <span class="rounded-md bg-white px-2 py-1 text-center text-[10px] font-semibold text-indigo-700 ring-1 ring-indigo-200">Aggie</span>
+              <span class="rounded-md bg-white px-2 py-1 text-center text-[10px] font-semibold text-emerald-700 ring-1 ring-emerald-200">Scout</span>
+              <span class="rounded-md bg-white px-2 py-1 text-center text-[10px] font-semibold text-amber-700 ring-1 ring-amber-200">Beacon</span>
+              <span class="rounded-md bg-white px-2 py-1 text-center text-[10px] font-semibold text-blue-700 ring-1 ring-blue-200">Atlas</span>
+              <span class="rounded-md bg-white px-2 py-1 text-center text-[10px] font-semibold text-violet-700 ring-1 ring-violet-200">Lumen</span>
+              <span class="rounded-md bg-white px-2 py-1 text-center text-[10px] font-semibold text-red-700 ring-1 ring-red-200">Sentinel</span>
+            </div>
+          </div>
+
+          <!-- Connector arrow -->
+          <div class="my-3 flex justify-center"><svg class="h-5 w-5 text-slate-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg></div>
+
+          <!-- Layer 3: MCP tools -->
+          <div class="rounded-xl border border-amber-200 bg-amber-50/60 p-4">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-bold uppercase tracking-wider text-amber-700">Layer 3</span>
+              <span class="text-xs font-semibold text-amber-700">MCP tools (41)</span>
+            </div>
+            <div class="mt-3 flex flex-wrap gap-1.5">
+              <span class="inline-flex items-center gap-1 rounded-md bg-white px-2 py-1 text-[10px] font-medium text-slate-700 ring-1 ring-slate-200">
+                <svg class="h-3 w-3 text-amber-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+                Audit log
+              </span>
+              <span class="inline-flex items-center gap-1 rounded-md bg-white px-2 py-1 text-[10px] font-medium text-slate-700 ring-1 ring-slate-200">
+                <svg class="h-3 w-3 text-amber-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"/></svg>
+                RLS-scoped queries
+              </span>
+              <span class="inline-flex items-center gap-1 rounded-md bg-white px-2 py-1 text-[10px] font-medium text-slate-700 ring-1 ring-slate-200">
+                <svg class="h-3 w-3 text-amber-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 3h18M3 9h18M3 15h12M3 21h12"/></svg>
+                Tool registry
+              </span>
+              <span class="inline-flex items-center gap-1 rounded-md bg-white px-2 py-1 text-[10px] font-medium text-slate-700 ring-1 ring-slate-200">
+                <svg class="h-3 w-3 text-amber-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9.143 17.082a24.248 24.248 0 0 0 3.844.148m-3.844-.148a23.856 23.856 0 0 1-5.455-1.31 8.964 8.964 0 0 0 2.3-5.542m3.155 6.852a3 3 0 0 0 5.667 1.97m1.965-2.277L21 21m-4.225-4.225a23.81 23.81 0 0 0 3.536-1.003A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6.53 6.53M3 3l3.53 3.53"/></svg>
+                Opt-out guards
+              </span>
+              <span class="inline-flex items-center gap-1 rounded-md bg-white px-2 py-1 text-[10px] font-medium text-slate-700 ring-1 ring-slate-200">
+                <svg class="h-3 w-3 text-amber-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 6V3m0 18v-3M5.636 5.636l2.122 2.122m8.484 8.484 2.122 2.122M3 12h3m12 0h3M5.636 18.364l2.122-2.122m8.484-8.484 2.122-2.122"/></svg>
+                Token meter
+              </span>
+            </div>
+          </div>
+
+          <!-- Connector arrow -->
+          <div class="my-3 flex justify-center"><svg class="h-5 w-5 text-slate-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg></div>
+
+          <!-- Layer 4: Models -->
+          <div class="rounded-xl border border-violet-200 bg-violet-50/60 p-4">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-bold uppercase tracking-wider text-violet-700">Layer 4</span>
+              <span class="text-xs font-semibold text-violet-700">Multi-provider model registry</span>
+            </div>
+            <div class="mt-3 flex flex-wrap gap-1.5">
+              <span class="rounded-md bg-white px-2 py-1 text-[10px] font-semibold text-slate-700 ring-1 ring-slate-200">Claude</span>
+              <span class="rounded-md bg-white px-2 py-1 text-[10px] font-semibold text-slate-700 ring-1 ring-slate-200">Gemini</span>
+              <span class="rounded-md bg-white px-2 py-1 text-[10px] font-semibold text-slate-700 ring-1 ring-slate-200">OpenAI</span>
+              <span class="rounded-md bg-white px-2 py-1 text-[10px] font-semibold text-slate-700 ring-1 ring-slate-200">OpenRouter</span>
+              <span class="rounded-md bg-white px-2 py-1 text-[10px] font-semibold text-slate-700 ring-1 ring-slate-200">Ollama (local)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: explanatory paragraphs -->
+        <div data-fade class="space-y-6">
+          <article class="rounded-xl border border-slate-200 bg-white p-6 transition-all hover:shadow-lg">
+            <div class="flex items-start gap-3">
+              <div class="inline-flex shrink-0 rounded-lg bg-indigo-50 p-2">
+                <svg class="h-5 w-5 text-indigo-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"/></svg>
+              </div>
+              <div>
+                <h3 class="text-base font-semibold">One agent team, every association.</h3>
+                <p class="mt-2 text-sm leading-relaxed text-slate-600">Tenant-aware via Postgres Row-Level Security &mdash; not per-customer forks, not per-customer prompts to maintain. Aggie answering Mel at WDAA never sees the data sitting in another association&rsquo;s row.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="rounded-xl border border-slate-200 bg-white p-6 transition-all hover:shadow-lg">
+            <div class="flex items-start gap-3">
+              <div class="inline-flex shrink-0 rounded-lg bg-violet-50 p-2">
+                <svg class="h-5 w-5 text-violet-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5"/></svg>
+              </div>
+              <div>
+                <h3 class="text-base font-semibold">Models swap with an env var.</h3>
+                <p class="mt-2 text-sm leading-relaxed text-slate-600">Claude &rarr; Gemini &rarr; OpenRouter &rarr; local Ollama, all behind one interface. Pricing changes? Latency spikes? New frontier model lands? We flip a flag &mdash; the apps don&rsquo;t care.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="rounded-xl border border-slate-200 bg-white p-6 transition-all hover:shadow-lg">
+            <div class="flex items-start gap-3">
+              <div class="inline-flex shrink-0 rounded-lg bg-amber-50 p-2">
+                <svg class="h-5 w-5 text-amber-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V18.75m-7.5-10.5H12M8.25 12h.01M12 12h3.75m-3.75 3h3.75M8.25 18h.01"/></svg>
+              </div>
+              <div>
+                <h3 class="text-base font-semibold">Every query audited.</h3>
+                <p class="mt-2 text-sm leading-relaxed text-slate-600">The MCP tool layer logs who asked what, when, on whose tenant, with which model. Compliance officers love it. Pavan loves it more &mdash; she can show the APVB exactly what AI touched the CPD record and when.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Quote pill -->
+          <div class="mt-2 rounded-2xl border border-violet-200 bg-gradient-to-br from-indigo-50 via-violet-50 to-emerald-50 p-6">
+            <div class="flex items-start gap-3">
+              <svg class="h-5 w-5 shrink-0 text-violet-500" fill="currentColor" viewBox="0 0 24 24"><path d="M9.983 3v7.391C9.983 16.095 6.5 18.95 3 19v-2.5c1.633-.55 3.483-1.95 3.483-4.5H3V3h6.983Zm11 0v7.391C20.983 16.095 17.5 18.95 14 19v-2.5c1.633-.55 3.483-1.95 3.483-4.5H14V3h6.983Z"/></svg>
+              <p class="text-base font-medium italic leading-relaxed text-slate-800">&ldquo;If we change a model tomorrow, no association even notices.&rdquo;</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 3. THE 16 CAPABILITIES                                        -->
+  <!-- ============================================================ -->
+  <section id="capabilities" class="bg-slate-50 py-16 lg:py-24">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <span class="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-700">16 capabilities</span>
+        <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">Every way Agend uses AI</h2>
+        <p class="mx-auto mt-4 max-w-2xl text-lg text-slate-600">Sixteen distinct AI capabilities, shipped or in flight, across the platform.</p>
+      </div>
+
+      <div class="mt-12 grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+
+        <!-- 1. Image Generation -->
+        <article data-fade class="overflow-hidden rounded-xl border border-slate-200 bg-white transition-all hover:shadow-lg">
+          <div class="cap-stripe bg-gradient-to-r from-indigo-500 to-violet-500"></div>
+          <div class="p-6">
+            <div class="flex items-start justify-between gap-3">
+              <span class="text-[10px] font-semibold uppercase tracking-wider text-slate-500">Studio &middot; Port 3064</span>
+              <span class="inline-flex items-center rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-medium text-emerald-700">Shipped</span>
+            </div>
+            <h3 class="mt-2 text-lg font-semibold">AI Image Generation</h3>
+            <p class="mt-2 text-sm text-slate-600">Generate logos, banners, and social cards in WDAA&rsquo;s exact brand &mdash; colours, type, voice &mdash; without firing up Photoshop.</p>
+            <p class="mt-2 text-sm italic text-slate-500">Why: comms teams own the schedule, not the design backlog.</p>
+            <div class="mt-3 inline-flex items-center gap-1 rounded-md bg-violet-50 px-2 py-0.5 text-[10px] font-medium text-violet-700 ring-1 ring-violet-200">
+              <svg class="h-3 w-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/></svg>
+              Imagen 3.0
+            </div>
+            <div class="mt-4 rounded-lg bg-indigo-50/70 p-3 text-xs text-slate-700">
+              <span class="font-semibold">At WDAA:</span> Comms team reclaims 6&nbsp;hrs/month.
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. Auto Image Tagging -->
+        <article data-fade class="overflow-hidden rounded-xl border border-slate-200 bg-white transition-all hover:shadow-lg">
+          <div class="cap-stripe bg-gradient-to-r from-indigo-500 to-violet-500"></div>
+          <div class="p-6">
+            <div class="flex items-start justify-between gap-3">
+              <span class="text-[10px] font-semibold uppercase tracking-wider text-slate-500">Studio &middot; Port 3064</span>
+              <span class="inline-flex items-center rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-medium text-emerald-700">Shipped</span>
+            </div>
+            <h3 class="mt-2 text-lg font-semibold">Auto Image Tagging &amp; Library Org</h3>
+            <p class="mt-2 text-sm text-slate-600">A vision model captions and folders every uploaded asset so a five-year archive is searchable in seconds, not weeks.</p>
+            <p class="mt-2 text-sm italic text-slate-500">Why: members&rsquo; faces and conference moments are findable, not lost.</p>
+            <div class="mt-3 inline-flex items-center gap-1 rounded-md bg-violet-50 px-2 py-0.5 text-[10px] font-medium text-violet-700 ring-1 ring-violet-200">Gemini 2.0 Flash</div>
+            <div class="mt-4 rounded-lg bg-indigo-50/70 p-3 text-xs text-slate-700">
+              <span class="font-semibold">At WDAA:</span> 5,000 conference photos catalogued in an afternoon.
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. Course Drafting -->
+        <article data-fade class="overflow-hidden rounded-xl border border-slate-200 bg-white transition-all hover:shadow-lg">
+          <div class="cap-stripe bg-gradient-to-r from-emerald-500 to-teal-500"></div>
+          <div class="p-6">
+            <div class="flex items-start justify-between gap-3">
+              <span class="text-[10px] font-semibold uppercase tracking-wider text-slate-500">Course Creator &middot; Port 3073</span>
+              <span class="inline-flex items-center rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-medium text-amber-700">In flight</span>
+            </div>
+            <h3 class="mt-2 text-lg font-semibold">AI Course Drafting</h3>
+            <p class="mt-2 text-sm text-slate-600">From PDF to lesson outlines, quizzes, and learning objectives &mdash; aligned to whatever framework your accreditation body insists on.</p>
+            <p class="mt-2 text-sm italic text-slate-500">Why: the bottleneck is editorial review, not authoring from scratch.</p>
+            <div class="mt-3 inline-flex items-center gap-1 rounded-md bg-violet-50 px-2 py-0.5 text-[10px] font-medium text-violet-700 ring-1 ring-violet-200">Claude</div>
+            <div class="mt-4 rounded-lg bg-indigo-50/70 p-3 text-xs text-slate-700">
+              <span class="font-semibold">At WDAA:</span> Pavan ships an APVB-aligned course in 2 weeks, not 3 months.
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. Six Specialist Agents -->
+        <article data-fade class="overflow-hidden rounded-xl border border-slate-200 bg-white transition-all hover:shadow-lg">
+          <div class="cap-stripe bg-gradient-to-r from-indigo-500 via-emerald-500 to-red-500"></div>
+          <div class="p-6">
+            <div class="flex items-start justify-between gap-3">
+              <span class="text-[10px] font-semibold uppercase tracking-wider text-slate-500">Web Dashboard &middot; Port 3060</span>
+              <span class="inline-flex items-center rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-medium text-emerald-700">Shipped</span>
+            </div>
+            <h3 class="mt-2 text-lg font-semibold">Six Specialist Agents</h3>
+            <p class="mt-2 text-sm text-slate-600">Aggie, Scout, Beacon, Atlas, Lumen, Sentinel. They live inside Loop channels and answer in your team&rsquo;s tone.</p>
+            <p class="mt-2 text-sm italic text-slate-500">Why: one conversation, six specialists, no tab-switching.</p>
+            <div class="mt-3 inline-flex items-center gap-1 rounded-md bg-violet-50 px-2 py-0.5 text-[10px] font-medium text-violet-700 ring-1 ring-violet-200">Claude Opus 4.7 + Haiku 4.5</div>
+            <div class="mt-4 rounded-lg bg-indigo-50/70 p-3 text-xs text-slate-700">
+              <span class="font-semibold">At WDAA:</span> Mel asks &ldquo;who&rsquo;s at risk?&rdquo; once, gets the cross-system answer.
+            </div>
+          </div>
+        </article>
+
+        <!-- 5. Membership Analyst (Lumen) -->
+        <article data-fade class="overflow-hidden rounded-xl border border-slate-200 bg-white transition-all hover:shadow-lg">
+          <div class="cap-stripe bg-gradient-to-r from-violet-500 to-fuchsia-500"></div>
+          <div class="p-6">
+            <div class="flex items-start justify-between gap-3">
+              <span class="text-[10px] font-semibold uppercase tracking-wider text-slate-500">Web &middot; Port 3060</span>
+              <span class="inline-flex items-center rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-medium text-emerald-700">Shipped</span>
+            </div>
+            <h3 class="mt-2 text-lg font-semibold">Membership Analyst (Lumen)</h3>
+            <p class="mt-2 text-sm text-slate-600">Renewal-risk plus engagement scoring across CRM, Events, LMS, and Loop &mdash; one view of every member&rsquo;s temperature.</p>
+            <p class="mt-2 text-sm italic text-slate-500">Why: silent members are the ones who churn first.</p>
+            <div class="mt-3 inline-flex items-center gap-1 rounded-md bg-violet-50 px-2 py-0.5 text-[10px] font-medium text-violet-700 ring-1 ring-violet-200">Claude Opus 4.7</div>
+            <div class="mt-4 rounded-lg bg-indigo-50/70 p-3 text-xs text-slate-700">
+              <span class="font-semibold">At WDAA:</span> Louise spotted 12 silent vets before they lapsed.
+            </div>
+          </div>
+        </article>
+
+        <!-- 6. Revenue Strategist (Scout) -->
+        <article data-fade class="overflow-hidden rounded-xl border border-slate-200 bg-white transition-all hover:shadow-lg">
+          <div class="cap-stripe bg-gradient-to-r from-emerald-500 to-green-500"></div>
+          <div class="p-6">
+            <div class="flex items-start justify-between gap-3">
+              <span class="text-[10px] font-semibold uppercase tracking-wider text-slate-500">Web &middot; Port 3060</span>
+              <span class="inline-flex items-center rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-medium text-emerald-700">Shipped</span>
+            </div>
+            <h3 class="mt-2 text-lg font-semibold">Revenue Strategist (Scout)</h3>
+            <p class="mt-2 text-sm text-slate-600">Sponsorship tier analysis, pricing scenarios, corporate-account targeting &mdash; with the deal history baked into every recommendation.</p>
+            <p class="mt-2 text-sm italic text-slate-500">Why: the right call on Tuesday saves the renewal on Friday.</p>
+            <div class="mt-3 inline-flex items-center gap-1 rounded-md bg-violet-50 px-2 py-0.5 text-[10px] font-medium text-violet-700 ring-1 ring-violet-200">Claude Opus 4.7</div>
+            <div class="mt-4 rounded-lg bg-indigo-50/70 p-3 text-xs text-slate-700">
+              <span class="font-semibold">At WDAA:</span> $42K Western District renewal saved with a Tuesday call.
+            </div>
+          </div>
+        </article>
+
+        <!-- 7. Compliance Sentinel -->
+        <article data-fade class="overflow-hidden rounded-xl border border-slate-200 bg-white transition-all hover:shadow-lg">
+          <div class="cap-stripe bg-gradient-to-r from-red-500 to-rose-500"></div>
+          <div class="p-6">
+            <div class="flex items-start justify-between gap-3">
+              <span class="text-[10px] font-semibold uppercase tracking-wider text-slate-500">Web &middot; Port 3060</span>
+              <span class="inline-flex items-center rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-medium text-emerald-700">Shipped</span>
+            </div>
+            <h3 class="mt-2 text-lg font-semibold">Compliance Sentinel</h3>
+            <p class="mt-2 text-sm text-slate-600">CPD posture, Code-of-Conduct watch, escalations &mdash; before the regulator even asks.</p>
+            <p class="mt-2 text-sm italic text-slate-500">Why: audits are painful only when they&rsquo;re a surprise.</p>
+            <div class="mt-3 inline-flex items-center gap-1 rounded-md bg-violet-50 px-2 py-0.5 text-[10px] font-medium text-violet-700 ring-1 ring-violet-200">Claude Opus 4.7</div>
+            <div class="mt-4 rounded-lg bg-indigo-50/70 p-3 text-xs text-slate-700">
+              <span class="font-semibold">At WDAA:</span> zero APVB-audit surprises this year.
+            </div>
+          </div>
+        </article>
+
+        <!-- 8. RFP Requirement Extraction -->
+        <article data-fade class="overflow-hidden rounded-xl border border-slate-200 bg-white transition-all hover:shadow-lg">
+          <div class="cap-stripe bg-gradient-to-r from-blue-500 to-cyan-500"></div>
+          <div class="p-6">
+            <div class="flex items-start justify-between gap-3">
+              <span class="text-[10px] font-semibold uppercase tracking-wider text-slate-500">ScopeSync &middot; Port 3065</span>
+              <span class="inline-flex items-center rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-medium text-emerald-700">Shipped</span>
+            </div>
+            <h3 class="mt-2 text-lg font-semibold">RFP Requirement Extraction</h3>
+            <p class="mt-2 text-sm text-slate-600">Workshop transcripts and tender PDFs become structured requirements with confidence scores &mdash; so reviewers spend time on the 70%, not the 100%.</p>
+            <p class="mt-2 text-sm italic text-slate-500">Why: the proposal deadline doesn&rsquo;t care that you only got the brief on Friday.</p>
+            <div class="mt-3 inline-flex items-center gap-1 rounded-md bg-violet-50 px-2 py-0.5 text-[10px] font-medium text-violet-700 ring-1 ring-violet-200">GPT-4 (JSON mode)</div>
+            <div class="mt-4 rounded-lg bg-indigo-50/70 p-3 text-xs text-slate-700">
+              <span class="font-semibold">At WDAA:</span> corporate sponsor brief processed in 48&nbsp;hrs.
+            </div>
+          </div>
+        </article>
+
+        <!-- 9. Capability Matching -->
+        <article data-fade class="overflow-hidden rounded-xl border border-slate-200 bg-white transition-all hover:shadow-lg">
+          <div class="cap-stripe bg-gradient-to-r from-blue-500 to-cyan-500"></div>
+          <div class="p-6">
+            <div class="flex items-start justify-between gap-3">
+              <span class="text-[10px] font-semibold uppercase tracking-wider text-slate-500">ScopeSync &middot; Port 3065</span>
+              <span class="inline-flex items-center rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-medium text-emerald-700">Shipped</span>
+            </div>
+            <h3 class="mt-2 text-lg font-semibold">Capability Matching</h3>
+            <p class="mt-2 text-sm text-slate-600">Each requirement is matched against the platform capability registry with reasoning &mdash; gaps surface before they become commitments.</p>
+            <p class="mt-2 text-sm italic text-slate-500">Why: a clear &ldquo;we already do that&rdquo; vs &ldquo;we&rsquo;d need to build that&rdquo; in minutes.</p>
+            <div class="mt-3 inline-flex items-center gap-1 rounded-md bg-violet-50 px-2 py-0.5 text-[10px] font-medium text-violet-700 ring-1 ring-violet-200">OpenAI</div>
+            <div class="mt-4 rounded-lg bg-indigo-50/70 p-3 text-xs text-slate-700">
+              <span class="font-semibold">At WDAA:</span> proposal mapping went from a week to an afternoon.
+            </div>
+          </div>
+        </article>
+
+        <!-- 10. User Story + UAT Auto-Drafts -->
+        <article data-fade class="overflow-hidden rounded-xl border border-slate-200 bg-white transition-all hover:shadow-lg">
+          <div class="cap-stripe bg-gradient-to-r from-blue-500 to-cyan-500"></div>
+          <div class="p-6">
+            <div class="flex items-start justify-between gap-3">
+              <span class="text-[10px] font-semibold uppercase tracking-wider text-slate-500">ScopeSync &middot; Port 3065</span>
+              <span class="inline-flex items-center rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-medium text-emerald-700">Shipped</span>
+            </div>
+            <h3 class="mt-2 text-lg font-semibold">User Story + UAT Auto-Drafts</h3>
+            <p class="mt-2 text-sm text-slate-600">Approved requirements turn into stories with plain-language UAT steps a board member can read &mdash; no PM round-trip.</p>
+            <p class="mt-2 text-sm italic text-slate-500">Why: the people approving the spec must understand the spec.</p>
+            <div class="mt-3 inline-flex items-center gap-1 rounded-md bg-violet-50 px-2 py-0.5 text-[10px] font-medium text-violet-700 ring-1 ring-violet-200">GPT-4o</div>
+            <div class="mt-4 rounded-lg bg-indigo-50/70 p-3 text-xs text-slate-700">
+              <span class="font-semibold">At WDAA:</span> board-approved spec ready for build, no PM round-trips.
+            </div>
+          </div>
+        </article>
+
+        <!-- 11. Workflow Auto-Classification -->
+        <article data-fade class="overflow-hidden rounded-xl border border-slate-200 bg-white transition-all hover:shadow-lg">
+          <div class="cap-stripe bg-gradient-to-r from-sky-500 to-blue-500"></div>
+          <div class="p-6">
+            <div class="flex items-start justify-between gap-3">
+              <span class="text-[10px] font-semibold uppercase tracking-wider text-slate-500">Atlas / QMS &middot; Port 3066</span>
+              <span class="inline-flex items-center rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-medium text-emerald-700">Shipped</span>
+            </div>
+            <h3 class="mt-2 text-lg font-semibold">Workflow Auto-Classification</h3>
+            <p class="mt-2 text-sm text-slate-600">New workflows are tagged Quality / Compliance / Operations on the fly &mdash; the dropdown nobody filled in is now answered for them.</p>
+            <p class="mt-2 text-sm italic text-slate-500">Why: dropdowns are the silent killers of every QMS adoption.</p>
+            <div class="mt-3 inline-flex items-center gap-1 rounded-md bg-violet-50 px-2 py-0.5 text-[10px] font-medium text-violet-700 ring-1 ring-violet-200">Rule-based NLP</div>
+            <div class="mt-4 rounded-lg bg-indigo-50/70 p-3 text-xs text-slate-700">
+              <span class="font-semibold">At WDAA:</span> no admin field to fill, the system just knows.
+            </div>
+          </div>
+        </article>
+
+        <!-- 12. Anomaly Detection -->
+        <article data-fade class="overflow-hidden rounded-xl border border-slate-200 bg-white transition-all hover:shadow-lg">
+          <div class="cap-stripe bg-gradient-to-r from-sky-500 to-blue-500"></div>
+          <div class="p-6">
+            <div class="flex items-start justify-between gap-3">
+              <span class="text-[10px] font-semibold uppercase tracking-wider text-slate-500">Atlas / QMS &middot; Port 3066</span>
+              <span class="inline-flex items-center rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-medium text-emerald-700">Shipped</span>
+            </div>
+            <h3 class="mt-2 text-lg font-semibold">Anomaly Detection</h3>
+            <p class="mt-2 text-sm text-slate-600">Catches duplicate workflows and over-allocated owners before they ship as confused processes to members.</p>
+            <p class="mt-2 text-sm italic text-slate-500">Why: two CPD-renewal flows is one too many.</p>
+            <div class="mt-3 inline-flex items-center gap-1 rounded-md bg-violet-50 px-2 py-0.5 text-[10px] font-medium text-violet-700 ring-1 ring-violet-200">Jaccard similarity</div>
+            <div class="mt-4 rounded-lg bg-indigo-50/70 p-3 text-xs text-slate-700">
+              <span class="font-semibold">At WDAA:</span> spotted three duplicate CPD-renewal flows before they confused members.
+            </div>
+          </div>
+        </article>
+
+        <!-- 13. Workflow AI Assistant -->
+        <article data-fade class="overflow-hidden rounded-xl border border-slate-200 bg-white transition-all hover:shadow-lg">
+          <div class="cap-stripe bg-gradient-to-r from-sky-500 to-blue-500"></div>
+          <div class="p-6">
+            <div class="flex items-start justify-between gap-3">
+              <span class="text-[10px] font-semibold uppercase tracking-wider text-slate-500">Atlas / QMS &middot; Port 3066</span>
+              <span class="inline-flex items-center rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-medium text-amber-700">In flight</span>
+            </div>
+            <h3 class="mt-2 text-lg font-semibold">Workflow AI Assistant</h3>
+            <p class="mt-2 text-sm text-slate-600">Embedded chat with full account context plus tool calling &mdash; new staff don&rsquo;t need a 40-page induction PDF.</p>
+            <p class="mt-2 text-sm italic text-slate-500">Why: onboarding is the most expensive workflow you have.</p>
+            <div class="mt-3 inline-flex items-center gap-1 rounded-md bg-violet-50 px-2 py-0.5 text-[10px] font-medium text-violet-700 ring-1 ring-violet-200">Claude 3.5 Sonnet</div>
+            <div class="mt-4 rounded-lg bg-indigo-50/70 p-3 text-xs text-slate-700">
+              <span class="font-semibold">At WDAA:</span> new admin productive on day one.
+            </div>
+          </div>
+        </article>
+
+        <!-- 14. AI Email Drafting -->
+        <article data-fade class="overflow-hidden rounded-xl border border-slate-200 bg-white transition-all hover:shadow-lg">
+          <div class="cap-stripe bg-gradient-to-r from-rose-500 to-pink-500"></div>
+          <div class="p-6">
+            <div class="flex items-start justify-between gap-3">
+              <span class="text-[10px] font-semibold uppercase tracking-wider text-slate-500">CRM &middot; Port 3069</span>
+              <span class="inline-flex items-center rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-medium text-emerald-700">Shipped</span>
+            </div>
+            <h3 class="mt-2 text-lg font-semibold">AI Email Drafting</h3>
+            <p class="mt-2 text-sm text-slate-600">Tone-controlled follow-ups grounded in the deal history &mdash; warm, professional, urgent, choose your register.</p>
+            <p class="mt-2 text-sm italic text-slate-500">Why: the blank-page problem is half the reason follow-ups don&rsquo;t happen.</p>
+            <div class="mt-3 inline-flex items-center gap-1 rounded-md bg-violet-50 px-2 py-0.5 text-[10px] font-medium text-violet-700 ring-1 ring-violet-200">Multi-provider</div>
+            <div class="mt-4 rounded-lg bg-indigo-50/70 p-3 text-xs text-slate-700">
+              <span class="font-semibold">At WDAA:</span> Dev&rsquo;s renewal-reminder email open rate went 24% &rarr; 38%.
+            </div>
+          </div>
+        </article>
+
+        <!-- 15. Deal Activity Summarisation -->
+        <article data-fade class="overflow-hidden rounded-xl border border-slate-200 bg-white transition-all hover:shadow-lg">
+          <div class="cap-stripe bg-gradient-to-r from-rose-500 to-pink-500"></div>
+          <div class="p-6">
+            <div class="flex items-start justify-between gap-3">
+              <span class="text-[10px] font-semibold uppercase tracking-wider text-slate-500">CRM &middot; Port 3069</span>
+              <span class="inline-flex items-center rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-medium text-emerald-700">Shipped</span>
+            </div>
+            <h3 class="mt-2 text-lg font-semibold">Deal Activity Summarisation</h3>
+            <p class="mt-2 text-sm text-slate-600">Bullet trajectory of every deal &mdash; what happened, what&rsquo;s next, where the energy is &mdash; in a glance.</p>
+            <p class="mt-2 text-sm italic text-slate-500">Why: the cost of a bad handover is a lost deal.</p>
+            <div class="mt-3 inline-flex items-center gap-1 rounded-md bg-violet-50 px-2 py-0.5 text-[10px] font-medium text-violet-700 ring-1 ring-violet-200">Multi-provider</div>
+            <div class="mt-4 rounded-lg bg-indigo-50/70 p-3 text-xs text-slate-700">
+              <span class="font-semibold">At WDAA:</span> handovers between Mel and the board take minutes, not hours.
+            </div>
+          </div>
+        </article>
+
+        <!-- 16. Hybrid Semantic Search -->
+        <article data-fade class="overflow-hidden rounded-xl border border-slate-200 bg-white transition-all hover:shadow-lg">
+          <div class="cap-stripe bg-gradient-to-r from-emerald-500 to-teal-500"></div>
+          <div class="p-6">
+            <div class="flex items-start justify-between gap-3">
+              <span class="text-[10px] font-semibold uppercase tracking-wider text-slate-500">Directory &middot; Port 3061</span>
+              <span class="inline-flex items-center rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-medium text-emerald-700">Shipped</span>
+            </div>
+            <h3 class="mt-2 text-lg font-semibold">Hybrid Semantic + Keyword Search</h3>
+            <p class="mt-2 text-sm text-slate-600">Find members by intent, not exact phrase, with graceful fallback to keyword when the embedding model is offline.</p>
+            <p class="mt-2 text-sm italic text-slate-500">Why: nobody types the exact phrase that&rsquo;s in the database.</p>
+            <div class="mt-3 inline-flex items-center gap-1 rounded-md bg-violet-50 px-2 py-0.5 text-[10px] font-medium text-violet-700 ring-1 ring-violet-200">Ollama embeddings + pgvector</div>
+            <div class="mt-4 rounded-lg bg-indigo-50/70 p-3 text-xs text-slate-700">
+              <span class="font-semibold">At WDAA:</span> &ldquo;rural mixed-practice vets&rdquo; returns the right 38 members instantly.
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 4. WDAA — A DAY IN THE LIFE                                   -->
+  <!-- ============================================================ -->
+  <section id="wdaa-day" class="bg-white py-16 lg:py-24">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <span class="inline-flex items-center gap-2 rounded-full border border-amber-200 bg-amber-50 px-3 py-1 text-xs font-medium text-amber-700">A day in the life</span>
+        <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">WDAA, 8:42am Tuesday.</h2>
+        <p class="mx-auto mt-4 max-w-2xl text-lg text-slate-600">Western District Veterinary Association. 230 members. Three-person admin team. Here&rsquo;s how AI changes their morning.</p>
+      </div>
+
+      <div class="relative mt-14">
+        <!-- Vertical spine (centre on lg, left on mobile) -->
+        <div class="timeline-spine pointer-events-none absolute top-0 bottom-0 left-4 w-1 rounded-full lg:left-1/2 lg:-translate-x-1/2"></div>
+
+        <ol class="space-y-10 lg:space-y-16">
+
+          <!-- Moment 1 -->
+          <li data-fade class="relative grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-12">
+            <!-- Dot -->
+            <div class="pointer-events-none absolute left-4 top-2 z-10 h-4 w-4 -translate-x-1/2 rounded-full border-4 border-white bg-indigo-500 shadow lg:left-1/2"></div>
+            <div class="lg:text-right lg:pr-8">
+              <div class="ml-10 lg:ml-0">
+                <span class="inline-flex items-center gap-1 rounded-full bg-indigo-100 px-3 py-1 text-xs font-semibold text-indigo-700">8:42am</span>
+                <h3 class="mt-3 text-xl font-semibold">Mel opens her laptop.</h3>
+                <p class="mt-3 text-sm leading-relaxed text-slate-600">Aggie has already drafted her morning brief: 3 deals progressing, 1 at risk (a $42K renewal &mdash; Western District corporate sponsor &mdash; 14 days quiet), platform green, 12 at-risk members surfaced, Pavan&rsquo;s CPD post ready to review.</p>
+                <p class="mt-3 text-sm font-medium italic text-indigo-700">Mel didn&rsquo;t ask. The brief was waiting.</p>
+              </div>
+            </div>
+            <div class="hidden lg:block"></div>
+          </li>
+
+          <!-- Moment 2 -->
+          <li data-fade class="relative grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-12">
+            <div class="pointer-events-none absolute left-4 top-2 z-10 h-4 w-4 -translate-x-1/2 rounded-full border-4 border-white bg-violet-500 shadow lg:left-1/2"></div>
+            <div class="hidden lg:block"></div>
+            <div class="lg:pl-8">
+              <div class="ml-10 lg:ml-0">
+                <span class="inline-flex items-center gap-1 rounded-full bg-violet-100 px-3 py-1 text-xs font-semibold text-violet-700">9:15am</span>
+                <h3 class="mt-3 text-xl font-semibold">Louise checks the membership dashboard.</h3>
+                <p class="mt-3 text-sm leading-relaxed text-slate-600">Lumen has flagged the 12 vets on her at-risk list. Each has a &ldquo;what changed&rdquo; note: career shift, surgery downtime, moved practice. Three are tagged &ldquo;high-value, intervene this week.&rdquo;</p>
+                <p class="mt-3 text-sm font-medium italic text-violet-700">Louise has 30 minutes of focused work, not 3 hours of spreadsheet hunting.</p>
+              </div>
+            </div>
+          </li>
+
+          <!-- Moment 3 -->
+          <li data-fade class="relative grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-12">
+            <div class="pointer-events-none absolute left-4 top-2 z-10 h-4 w-4 -translate-x-1/2 rounded-full border-4 border-white bg-amber-500 shadow lg:left-1/2"></div>
+            <div class="lg:text-right lg:pr-8">
+              <div class="ml-10 lg:ml-0">
+                <span class="inline-flex items-center gap-1 rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-700">10:30am</span>
+                <h3 class="mt-3 text-xl font-semibold">Dev drafts the November conference comms.</h3>
+                <p class="mt-3 text-sm leading-relaxed text-slate-600">Beacon writes a personalised invite for each member tier: senior vets get the keynote angle, nurses get the CPD-credit angle, students get the bursary angle. Sentinel reviews for compliance language before the send.</p>
+                <p class="mt-3 text-sm font-medium italic text-amber-700">3 hours of writing becomes 20 minutes of review.</p>
+              </div>
+            </div>
+            <div class="hidden lg:block"></div>
+          </li>
+
+          <!-- Moment 4 -->
+          <li data-fade class="relative grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-12">
+            <div class="pointer-events-none absolute left-4 top-2 z-10 h-4 w-4 -translate-x-1/2 rounded-full border-4 border-white bg-blue-500 shadow lg:left-1/2"></div>
+            <div class="hidden lg:block"></div>
+            <div class="lg:pl-8">
+              <div class="ml-10 lg:ml-0">
+                <span class="inline-flex items-center gap-1 rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-700">1:45pm</span>
+                <h3 class="mt-3 text-xl font-semibold">Pavan ingests the new APVB practice guidelines.</h3>
+                <p class="mt-3 text-sm leading-relaxed text-slate-600">A 50-page PDF. ScopeSync extracts each new competency, maps to existing LMS modules, flags gaps. Pavan reviews the gaps, accepts the rest.</p>
+                <p class="mt-3 text-sm font-medium italic text-blue-700">No more reading the PDF twice and second-guessing.</p>
+              </div>
+            </div>
+          </li>
+
+          <!-- Moment 5 -->
+          <li data-fade class="relative grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-12">
+            <div class="pointer-events-none absolute left-4 top-2 z-10 h-4 w-4 -translate-x-1/2 rounded-full border-4 border-white bg-emerald-500 shadow lg:left-1/2"></div>
+            <div class="lg:text-right lg:pr-8">
+              <div class="ml-10 lg:ml-0">
+                <span class="inline-flex items-center gap-1 rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold text-emerald-700">4:10pm</span>
+                <h3 class="mt-3 text-xl font-semibold">A sponsor RFP arrives.</h3>
+                <p class="mt-3 text-sm leading-relaxed text-slate-600">ScopeSync runs requirement extraction and capability matching while Mel makes coffee. Draft proposal lands in her inbox before she&rsquo;s back.</p>
+                <p class="mt-3 text-sm font-medium italic text-emerald-700">48-hour turnaround, no Friday-night scrambling.</p>
+              </div>
+            </div>
+            <div class="hidden lg:block"></div>
+          </li>
+
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 5. THE 4 PILLARS                                              -->
+  <!-- ============================================================ -->
+  <section class="bg-slate-50 py-16 lg:py-24">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <span class="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-3 py-1 text-xs font-medium text-blue-700">Architectural reassurance</span>
+        <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">Four pillars under everything.</h2>
+        <p class="mx-auto mt-4 max-w-2xl text-lg text-slate-600">The hard part isn&rsquo;t the prompts. It&rsquo;s the plumbing that makes them safe to ship to a hundred associations at once.</p>
+      </div>
+
+      <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <!-- Pillar 1 -->
+        <article data-fade class="rounded-xl border border-slate-200 bg-white p-6 transition-all hover:shadow-lg">
+          <div class="inline-flex rounded-lg bg-indigo-50 p-3">
+            <svg class="h-6 w-6 text-indigo-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"/></svg>
+          </div>
+          <h3 class="mt-4 text-base font-semibold">Tenant-isolated by construction</h3>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">RLS at Postgres, not in agent code. WDAA&rsquo;s data never touches another association&rsquo;s session &mdash; even by mistake.</p>
+        </article>
+
+        <!-- Pillar 2 -->
+        <article data-fade class="rounded-xl border border-slate-200 bg-white p-6 transition-all hover:shadow-lg">
+          <div class="inline-flex rounded-lg bg-violet-50 p-3">
+            <svg class="h-6 w-6 text-violet-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5"/></svg>
+          </div>
+          <h3 class="mt-4 text-base font-semibold">Provider-agnostic</h3>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">Claude today, Gemini tomorrow, local Ollama for embeddings. Swappable behind one interface &mdash; pricing and latency stay our problem, not yours.</p>
+        </article>
+
+        <!-- Pillar 3 -->
+        <article data-fade class="rounded-xl border border-slate-200 bg-white p-6 transition-all hover:shadow-lg">
+          <div class="inline-flex rounded-lg bg-amber-50 p-3">
+            <svg class="h-6 w-6 text-amber-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25"/></svg>
+          </div>
+          <h3 class="mt-4 text-base font-semibold">Audited end-to-end</h3>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">Every tool call logged with account, user, agent, inputs. Compliance officers love this &mdash; the regulator-friendly answer is always one query away.</p>
+        </article>
+
+        <!-- Pillar 4 -->
+        <article data-fade class="rounded-xl border border-slate-200 bg-white p-6 transition-all hover:shadow-lg">
+          <div class="inline-flex rounded-lg bg-emerald-50 p-3">
+            <svg class="h-6 w-6 text-emerald-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941"/></svg>
+          </div>
+          <h3 class="mt-4 text-base font-semibold">Cost-aware</h3>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">Token usage tracked per agent per tenant. Budget alerts before surprises &mdash; nobody wakes up to a five-figure inference bill.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 6. STATS                                                      -->
+  <!-- ============================================================ -->
+  <section class="bg-white py-16 lg:py-24">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h2 class="text-3xl font-semibold tracking-tight sm:text-4xl">By the numbers</h2>
+        <p class="mx-auto mt-4 max-w-2xl text-lg text-slate-600">The shape of the platform today.</p>
+      </div>
+
+      <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4" data-counter-grid>
+        <div class="rounded-xl border border-slate-200 bg-white p-6 text-center shadow-sm">
+          <div class="mx-auto inline-flex rounded-lg bg-indigo-50 p-3">
+            <svg class="h-6 w-6 text-indigo-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6Zm0 9.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25Zm9.75-9.75A2.25 2.25 0 0 1 15.75 3.75H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6Zm0 9.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z"/></svg>
+          </div>
+          <div class="mt-4 text-5xl font-extrabold counter" data-target="20">0</div>
+          <div class="mt-1 text-sm font-semibold text-slate-700">Apps</div>
+          <p class="mt-2 text-xs text-slate-500">AI woven through every one</p>
+        </div>
+
+        <div class="rounded-xl border border-slate-200 bg-white p-6 text-center shadow-sm">
+          <div class="mx-auto inline-flex rounded-lg bg-emerald-50 p-3">
+            <svg class="h-6 w-6 text-emerald-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z"/></svg>
+          </div>
+          <div class="mt-4 text-5xl font-extrabold counter" data-target="6">0</div>
+          <div class="mt-1 text-sm font-semibold text-slate-700">Specialist agents</div>
+          <p class="mt-2 text-xs text-slate-500">One team, shared across every association</p>
+        </div>
+
+        <div class="rounded-xl border border-slate-200 bg-white p-6 text-center shadow-sm">
+          <div class="mx-auto inline-flex rounded-lg bg-amber-50 p-3">
+            <svg class="h-6 w-6 text-amber-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z"/></svg>
+          </div>
+          <div class="mt-4 text-5xl font-extrabold counter" data-target="41">0</div>
+          <div class="mt-1 text-sm font-semibold text-slate-700">MCP tools</div>
+          <p class="mt-2 text-xs text-slate-500">Each tenant-scoped, audited, opt-out aware</p>
+        </div>
+
+        <div class="rounded-xl border border-slate-200 bg-white p-6 text-center shadow-sm">
+          <div class="mx-auto inline-flex rounded-lg bg-violet-50 p-3">
+            <svg class="h-6 w-6 text-violet-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z"/></svg>
+          </div>
+          <div class="mt-4 text-5xl font-extrabold counter" data-target="5">0</div>
+          <div class="mt-1 text-sm font-semibold text-slate-700">Model providers</div>
+          <p class="mt-2 text-xs text-slate-500">Claude, Gemini, OpenAI, OpenRouter, Ollama &mdash; flip with an env var</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 7. CTA                                                        -->
+  <!-- ============================================================ -->
+  <section class="relative overflow-hidden bg-gradient-to-br from-indigo-600 via-violet-600 to-emerald-500 py-16 lg:py-24">
+    <div class="pointer-events-none absolute -top-32 -right-32 h-96 w-96 rounded-full bg-white/10 blur-3xl"></div>
+    <div class="pointer-events-none absolute -bottom-32 -left-32 h-96 w-96 rounded-full bg-white/10 blur-3xl"></div>
+    <div class="relative mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-semibold tracking-tight text-white sm:text-4xl">Want this for your association?</h2>
+      <p class="mx-auto mt-4 max-w-2xl text-lg text-white/85">AI woven through every part of the operation. One platform. One conversation. Your data, your tenant, your team.</p>
+      <div class="mt-8">
+        <a href="mailto:glen@agend.com.au?subject=Agend%20AI%20Everywhere%20demo" class="inline-flex items-center gap-2 rounded-full bg-white px-8 py-3 text-base font-medium text-slate-900 shadow-lg transition hover:bg-slate-100">
+          Talk to us
+          <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER START -->
+<footer class="border-t border-slate-200 bg-white py-8">
+  <div class="mx-auto max-w-6xl px-4 text-center text-sm text-slate-500 sm:px-6">
+    &copy; 2026 Agend Pty Ltd. All rights reserved.
+  </div>
+</footer>
+<!-- FOOTER END -->
+
+<script>
+  (function(){
+    // -- Nav highlight --
+    var key = document.body.getAttribute('data-page');
+    if (key) {
+      document.querySelectorAll('[data-nav="' + key + '"]').forEach(function(el){
+        el.classList.add('text-indigo-600', 'font-semibold');
+      });
+    }
+
+    // -- Mobile menu toggle --
+    var t = document.querySelector('[data-mobile-toggle]'),
+        m = document.querySelector('[data-mobile-menu]');
+    if (t && m) {
+      t.addEventListener('click', function(){
+        m.classList.toggle('hidden');
+      });
+    }
+
+    var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // -- Reveal-on-scroll for [data-fade] --
+    var fadeEls = document.querySelectorAll('[data-fade]');
+    if ('IntersectionObserver' in window && !prefersReducedMotion) {
+      var fadeObserver = new IntersectionObserver(function(entries){
+        entries.forEach(function(entry){
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            fadeObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -10% 0px' });
+      fadeEls.forEach(function(el){ fadeObserver.observe(el); });
+    } else {
+      fadeEls.forEach(function(el){ el.classList.add('is-visible'); });
+    }
+
+    // -- Counter animation --
+    var counters = document.querySelectorAll('.counter[data-target]');
+    function animateCounter(el) {
+      var target = parseInt(el.getAttribute('data-target'), 10) || 0;
+      if (prefersReducedMotion) {
+        el.textContent = target;
+        return;
+      }
+      var start = null;
+      var duration = 1400;
+      function step(ts) {
+        if (!start) start = ts;
+        var progress = Math.min((ts - start) / duration, 1);
+        // Ease-out cubic
+        var eased = 1 - Math.pow(1 - progress, 3);
+        el.textContent = Math.round(target * eased);
+        if (progress < 1) requestAnimationFrame(step);
+        else el.textContent = target;
+      }
+      requestAnimationFrame(step);
+    }
+
+    if ('IntersectionObserver' in window) {
+      var counterObserver = new IntersectionObserver(function(entries){
+        entries.forEach(function(entry){
+          if (entry.isIntersecting) {
+            animateCounter(entry.target);
+            counterObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.4 });
+      counters.forEach(function(el){ counterObserver.observe(el); });
+    } else {
+      counters.forEach(function(el){ el.textContent = el.getAttribute('data-target'); });
+    }
+  })();
+</script>
+</body>
+</html>
